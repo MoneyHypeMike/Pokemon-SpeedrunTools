@@ -1,0 +1,34 @@
+Abilities:
+http://www.upokecenter.com/dex/?lang=en&view=abilitiesbypkmn
+http://www.smogon.com/dex/bw/pokemon/
+
+Base Stats:
+http://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_I)
+http://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_II-V)
+
+Types:
+http://veekun.com/dex/pokemon
+
+EV Yield:
+http://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_effort_value_yield
+
+Exp Group:
+http://veekun.com/dex/pokemon
+
+Exp Yield:
+http://www.upokecenter.com/dex/?lang=en&view=baseexp
+
+Happiness:
+
+http://www.upokecenter.com/dex/?lang=en&view=happiness
+http://veekun.com/dex/pokemon
+
+Catch Rate:
+
+http://www.upokecenter.com/dex/?lang=en&view=rarenesses
+http://veekun.com/dex/pokemon
+
+Weight:
+
+http://www.upokecenter.com/dex/?lang=en&view=weights
+http://veekun.com/dex/pokemon
