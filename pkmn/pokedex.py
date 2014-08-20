@@ -1,15 +1,15 @@
 import species as s
 
 class Pokedex():
-    """Defines a pokedex
-       
-    """
+    """Creates a pokedex for generation 1 to 5"""
     def __init__(self):
         self.dex = {1: {}, 2: {}, 3: {}, 4:{}, 5:{}}
+        
         for x in range(1, 6):
-            self.files(x, )
+            self.files(x)
         
     def files(self, gen):
+        """Selects the correct file to generate the pokedex"""
         if gen == 1:
             filename = ".\pokedex_data\gen1dex.csv"
         elif gen == 2:
@@ -24,6 +24,7 @@ class Pokedex():
         self.create_dex(gen, filename)
     
     def create_dex(self, gen, filename):
+        """Generates the pokedex for the specified generation"""
         with open(filename) as f:
             f.readline()
             for lines in f:

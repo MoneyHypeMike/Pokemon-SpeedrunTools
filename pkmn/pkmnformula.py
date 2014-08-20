@@ -48,6 +48,7 @@ def calc_stat(gen, stat_name, base_stat, level, iv=0, ev=0, nature=1):
 
 
 def calc_dv(stat_name, base_stat, level, stat_value, stat_exp=0):
+    """Calculates the dv of a pokemon"""
     if stat_name == "hp":
         dv_value = [dv for dv in range(16)
                     if stat_value <= (2 * (dv + base_stat) + ceil(sqrt(stat_exp)) // 4) 
@@ -71,6 +72,7 @@ def calc_dv(stat_name, base_stat, level, stat_value, stat_exp=0):
 
 
 def calc_iv(stat_name, base_stat, level, stat_value, ev=0, nature=1):
+    """Calculates the iv of a pokemon"""
     if stat_name == "hp":
         iv_value = [iv for iv in range(32)
                     if stat_value <= (2 * base_stat + iv + ev // 4)
@@ -97,6 +99,7 @@ def calc_iv(stat_name, base_stat, level, stat_value, ev=0, nature=1):
 #Need to add gen 5
 def calc_exp(loser_level, exp_yield, num_poke = 1, trainer_battle = True,
              orig_trainer = True, hold_item = None, gen = 1, winner_level=0):
+    """Calculates the experience points gained"""
     trainer_battle = 1.5 if trainer_battle == True else 1
     hold_item = 1.5 if hold_item == "Lucky Egg" else 1
     orig_trainer = 1 if orig_trainer == True else 1.5
