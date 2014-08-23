@@ -1,6 +1,7 @@
-from species import Species
 from moves import Moves
 from math import ceil, floor, sqrt
+import formulas
+import pokedex
 
 class Pokemon():
     """Defines a pokemon
@@ -39,50 +40,53 @@ class Pokemon():
         self.nature = [nature, 0, 0, 0, 0, 0]
         self.ability = ability
         self.item = item
-        self.move = {1: move1, 2: move2, 3: move3, 4: move4}
+        self.moves = [move1, move2, move3, move4]
         self.exp = exp
         self.origin = origin
         self.status = status
-        self.stat = [0, 0, 0, 0, 0, 0]
         self.iv = [iv_hp, iv_atk, iv_def, iv_spatk, iv_spdef, iv_spd]
         self.ev = [ev_hp, ev_atk, ev_def, ev_spatk, ev_spdef, ev_spd]
         self.species = species
+        self.stat = [0, 0, 0, 0, 0, 0]
         self.calc_nature()
-        self.calc_stat(1)
+        self.calc_stat()
         
     def calc_ev(self, ev_yield):
         """Calculates the amount of ev gained by a pokemon
            
-           ev_yield (int + list): ev gained for each stat
+           ev_yield (int + list): ev gained for each stat by the fainted pokemon
         """
         self.ev = [(x + y) for (x,y) in zip(self.ev, ev_yield)]
     
-    def calc_stat(self, gen):
+    def calc_stat(self):
         """Calculates the stats of a pokemon
            
            gen (int): Generation of the game
         """
         
-        if gen < 3:
-            self.stat[0] = floor((2 * (self.iv[0] + self.species.base[0])
+        if self.species.gen < 3:
+            self.stat[0] = floor((2 * (self.iv[0] + self.species.base_stats[0])
                                   + ceil(sqrt(self.ev[0])) // 4) * self.level
                                   // 100 + self.level + 10)
             
             for x in range(1, 6):
-                self.stat[x] = floor((2 * (self.iv[x] + self.species.base[x])
+                self.stat[x] = floor((2 * (self.iv[x] + self.species.base_stats[x])
                                       + ceil(sqrt(self.ev[x])) // 4) 
                                       * self.level // 100 + 5)
         else:
-            self.stat[0] = floor((2 * self.species.base[0] + self.iv[0] +
+            self.stat[0] = floor((2 * self.species.base_stats[0] + self.iv[0] +
                                   self.ev[0] // 4) * self.level // 100 + 
                                   self.level + 10)
-        
+            
+            
+            
             for x in range(1, 6):
-                self.stat[x] = floor(((2 * self.species.base[x] + self.iv[x] +
+                self.stat[x] = floor(((2 * self.species.base_stats[x] + self.iv[x] +
                                        self.ev[x] // 4) * self.level // 100 +
                                        5) * self.nature[x])
+    
     def calc_nature(self):
-        """Calculates the nature multipliers"""
+        """Calculates the nature multipliers for each stat"""
         #This array is used to determinate the multiplier for each nature
         #The quotient indicates +nature, the remainder indicates -nature
         #Attack(0), Defense (1), Sp. Atk(3), Sp.Def (4), Speed (5)
@@ -102,19 +106,49 @@ class Pokemon():
             if index % 6 != 0:
                 self.nature[plus + 1] = 1.1
                 self.nature[minus + 1] = 0.9
+    
+    def level_up(self):
+        """Makes a pokemon level up"""
+        self.level += 1
+        self.calc_stat()
+    
+    def learn_move(self, move, slot):
+        """Makes a pokemon learn a move"""
+        num_moves = len([x for x in self.moves if x != ""])
+        if num_moves < 4:
+            self.moves[num_moves] = move
+        else:
+            self.moves[slot] = move
+    
+    def give_item(self, item):
+        """Gives a hold item to a pokemon"""
+        self.item = item
+    
+    def remove_item(self):
+        """Removes a hold item to a pokemon"""
+        self.item = ""
+
+def calc_all_stats(poke):
+    """Calculates stats from level 1 to level 100 of a pokemon"""
+    with open("stats.txt", "w") as f:
+        f.write("Level - [HP, atk, def, spatk, spd] \n")
+        for x in range(100):
+            poke.level_up()
+            f.write(str(poke.level) + " - " + str(poke.stat) + "\n")
 
 #data used for test
-m1 = Moves("Hyper Beam", "Physical", "Normal", 150, 5, 90)
-m2 = Moves("Water Pulse", "Special", "Water", 60, 20, 100)
-m3 = Moves("Rock Blast", "Physical", "Rock", 25, 10, 90)
-m4 = Moves("Ice Shard", "Physical", "Ice", 40, 30, 100)
+#m1 = Moves("Hyper Beam", "Physical", "Normal", 150, 5, 90)
+#m2 = Moves("Water Pulse", "Special", "Water", 60, 20, 100)
+#m3 = Moves("Rock Blast", "Physical", "Rock", 25, 10, 90)
+#m4 = Moves("Ice Shard", "Physical", "Ice", 40, 30, 100)
 
-s = Species(1, "Bulbasaur", "Grass", "Poison", "Overgrow", "", "Chlorophyll",
-            15.2, 45, 70, 45, 49, 49, 65, 65, 45, "medium_slow", 64, 0, 0, 0, 
-            0, 1, 0)
-            
-p1 = Pokemon(100, "Jolly", "Overgrow", "", m1, m2, m3, m4, "Trainer", 0, 15,
-             15, 15, 15, 15, 15, 0, 0, 0, 0, 0, 0, s)
-            
-p4 = Pokemon(100, "Jolly", "Overgrow", "", m1, m2, m3, m4, "Trainer", 0, 31,
-             31, 31, 31, 31, 31, 0, 0, 0, 0, 0, 0, s)
+#p = pokedex.dex.dex[4]["Piplup"]
+
+#piplup = Pokemon(0, "Mild", "Torrent", "", "Tackle", "Growl", "", "", 
+#                 formulas.calc_exp(p.gen, p.base_exp), "Trainer",
+#                 25, 31, 31, 31, 30, 31, 0, 0, 0, 0, 0, 0, p)
+
+#calc_all_stats(piplup)
+
+#piplup.learn_move(m4, 3)
+#piplup.give_item("Choice Specs")

@@ -27,10 +27,10 @@ Number,Name,Type1,Type2,Ability1,Ability2,Hidden Ability,Weight (kg),Catch Rate,
 26,Raichu,Electric,,,,,30,75,70,60,90,55,90,90,100,Medium,122,60,90,55,90,90,100
 27,Sandshrew,Ground,,,,,12,255,70,50,75,85,30,30,40,Medium,93,50,75,85,30,30,40
 28,Sandslash,Ground,,,,,29.5,90,70,75,100,110,55,55,65,Medium,163,75,100,110,55,55,65
-29,NidoranF,Poison,,,,,7,235,70,55,47,52,40,40,41,Medium Slow,59,55,47,52,40,40,41
+29,Nidoranf,Poison,,,,,7,235,70,55,47,52,40,40,41,Medium Slow,59,55,47,52,40,40,41
 30,Nidorina,Poison,,,,,20,120,70,70,62,67,55,55,56,Medium Slow,117,70,62,67,55,55,56
 31,Nidoqueen,Poison,Ground,,,,60,45,70,90,82,87,75,75,76,Medium Slow,194,90,82,87,75,75,76
-32,NidoranM,Poison,,,,,9,235,70,46,57,40,40,40,50,Medium Slow,60,46,57,40,40,40,50
+32,Nidoranm,Poison,,,,,9,235,70,46,57,40,40,40,50,Medium Slow,60,46,57,40,40,40,50
 33,Nidorino,Poison,,,,,19.5,120,70,61,72,57,55,55,65,Medium Slow,118,61,72,57,55,55,65
 34,Nidoking,Poison,Ground,,,,62,45,70,81,92,77,75,75,85,Medium Slow,195,81,92,77,75,75,85
 35,Clefairy,Fairy,,,,,7.5,150,140,70,45,48,60,60,35,Fast,68,70,45,48,60,60,35
