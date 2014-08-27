@@ -1,0 +1,166 @@
+Name,Type,Power,Accuracy(/255),PP,Effect%(/255),Description
+Absorb,GRASS,20,255,20,0,"If this attack is successful, user gains half of HP lost by the opposing Pokémon because of this attack."
+Acid,POISON,40,255,30,0,May lower the opposing Pokémon’s Defense by 1 stage.
+Acid Armor,POISON,0,255,40,0,Raises user’s Defense by 2 stages.
+Agility,PSYCHIC,0,255,30,0,Raises user’s Speed by 2 stages.
+Amnesia,PSYCHIC,0,255,20,0,Raises user’s Special by 2 stages.
+Aurora Beam,ICE,65,255,20,0,May lower the opposing Pokémon’s Attack by 1 stage.
+Barrage,NORMAL,15,216,20,0,"Multi-hit attack. Calculates damage, and then deals that much damage to opponent two to five times in a row. 37.5% for 2 or 3 t..."
+Barrier,PSYCHIC,0,255,30,0,Raises user’s Defense by 2 stages.
+Bide,NORMAL,0,255,10,0,"If successful and isn’t already in effect, the effect begins and a variable X is set to zero. If user uses this attack, the las..."
+Bind,NORMAL,15,191,20,0,"Multi-turn attack. Unless this attack misses, even if opponent is immune to this attack, the effect begins if this attack isn’t..."
+Bite,NORMAL,60,255,25,26,May make the opposing Pokémon flinch (26/256 chance).
+Blizzard,ICE,120,229,5,26,May freeze the opposing Pokémon (26/256 chance).
+Body Slam,NORMAL,85,255,15,0,May paralyze the opposing Pokémon. Additional effect doesn’t happen if the opposing Pokémon shares a type with this attack’s type.
+Bone Club,GROUND,65,216,20,26,May make the opposing Pokémon flinch (26/256 chance).
+Bonemerang,GROUND,50,229,10,0,"Calculates damage, then deals that much damage to the opposing Pokémon two times in a row."
+Bubble,WATER,20,255,30,77,Additional effect chance is 77/256 in
+BubbleBeam,WATER,65,255,20,77,Additional effect chance is 77/256 in Additional effect chance is 77/256 in
+Clamp,WATER,35,191,10,0,"Multi-turn attack. Unless this attack misses, even if opponent is immune to this attack, the effect begins if this attack isn’t..."
+Comet Punch,NORMAL,18,216,15,0,"Multi-hit attack. Calculates damage, and then deals that much damage to opponent two to five times in a row. 37.5% for 2 or 3 t..."
+Confuse Ray,GHOST,0,255,10,0,Confuses the opposing Pokémon.
+Confusion,PSYCHIC,50,255,25,26,May confuse the opposing Pokémon (26/256 chance).
+Constrict,NORMAL,10,255,35,77,Additional effect chance is 77/256 in
+Conversion,NORMAL,0,255,30,0,Changes user’s type(s) to that/those of the opposing Pokémon. User retains the new type until user leaves the battle.
+Counter,FIGHTING,1,255,20,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las... This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Crabhammer,WATER,90,216,10,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Cut,NORMAL,50,242,30,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Defense Curl,NORMAL,0,255,40,0,Raises user’s Defense by 1 stage.
+Dig,GROUND,100,255,10,0,"Two-turn attack. While user is using this attack, user won’t receive effects from all attacks other than Bide or Swift."
+Disable,NORMAL,0,140,20,0,"During effect, a random move of the opposing Pokémon can’t be used or chosen for use by that Pokémon."
+Dizzy Punch,NORMAL,70,255,10,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Double Kick,FIGHTING,30,255,30,0,"Calculates damage, then deals that much damage to the opposing Pokémon two times in a row."
+Double Team,NORMAL,0,255,15,0,Raises user’s Evade by 1 stage.
+Double-Edge,NORMAL,100,255,15,0,"If successful, user loses 1/4 of HP lost by the opposing Pokémon because of this attack (recoil). In If successful, user loses 1/4 of HP lost by the opposing Pokémon because of this attack (recoil). In"
+DoubleSlap,NORMAL,15,216,10,0,"Multi-hit attack. Calculates damage, and then deals that much damage to opponent two to five times in a row. 37.5% for 2 or 3 t..."
+Dragon Rage,DRAGON,1,255,10,0,Not affected by type immunities. Deals 40 damage to the opposing Pokémon.
+Dream Eater,PSYCHIC,100,255,15,0,"Fails unless opponent is asleep. If successful, user gains half of HP lost by opponent because of this attack."
+Drill Peck,FLYING,80,255,20,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Earthquake,GROUND,100,255,10,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Egg Bomb,NORMAL,100,191,10,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Ember,FIRE,40,255,25,26,May burn the opposing Pokémon (26/256 chance).
+Explosion,NORMAL,170,255,5,0,"User faints, after damage calculation. The opposing Pokémon’s Defense is treated as halved in the damage calculation."
+Fire Blast,FIRE,120,216,5,77,May burn the opposing Pokémon (77/256 chance).
+Fire Punch,FIRE,75,255,15,26,May burn the opposing Pokémon (26/256 chance).
+Fire Spin,FIRE,15,178,15,0,"Multi-turn attack. Unless this attack misses, even if opponent is immune to this attack, the effect begins if this attack isn’t..."
+Fissure,GROUND,1,76,5,0,"One-hit KO. Deals 65,535 damage to opponent. Ineffective if user’s current Speed is lower than opponent’s current Speed. Affect..."
+Flamethrower,FIRE,95,255,15,26,May burn the opposing Pokémon (26/256 chance).
+Flash,NORMAL,0,178,20,0,Lowers the opposing Pokémon’s Accuracy by 1 stage.
+Fly,FLYING,70,242,15,0,"Two-turn attack. While user is using this attack, user won’t receive effects from all attacks other than Bide or Swift."
+Focus Energy,NORMAL,0,255,30,0,"Attacks by user have a reduced chance for a critical hit in Pokémon Red Version, Pokémon Blue Version..."
+Fury Attack,NORMAL,15,216,20,0,"Multi-hit attack. Calculates damage, and then deals that much damage to opponent two to five times in a row. 37.5% for 2 or 3 t..."
+Fury Swipes,NORMAL,18,204,15,0,"Multi-hit attack. Calculates damage, and then deals that much damage to opponent two to five times in a row. 37.5% for 2 or 3 t..."
+Glare,NORMAL,0,191,30,0,Paralyzes the opposing Pokémon. Not affected by type immunities.
+Growl,NORMAL,0,255,40,0,Lowers the opposing Pokémon’s Attack by 1 stage.
+Growth,NORMAL,0,255,40,0,Raises user’s Special by 1 stage.
+Guillotine,NORMAL,1,76,5,0,"One-hit KO. Deals 65,535 damage to opponent. Ineffective if user’s current Speed is lower than opponent’s current Speed. Affect..."
+Gust,NORMAL,40,255,35,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Harden,NORMAL,0,255,30,0,Raises user’s Defense by 1 stage.
+Haze,ICE,0,255,30,0,Resets each stat stage of each Pokémon in battle to zero. The opposing Pokémon is cured of statuses. Ends effect of Focus Energ...
+Headbutt,NORMAL,70,255,15,77,May make the opposing Pokémon flinch (77/256 chance).
+Hi Jump Kick,FIGHTING,85,229,20,0,"If this attack misses or becomes ineffective, user loses 1 HP."
+Horn Attack,NORMAL,65,255,25,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Horn Drill,NORMAL,1,76,5,0,"One-hit KO. Deals 65,535 damage to opponent. Ineffective if user’s current Speed is lower than opponent’s current Speed. Affect..."
+Hydro Pump,WATER,120,204,5,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Hyper Beam,NORMAL,150,229,5,0,"User can’t attack or switch on the next turn, unless this attack misses, faints the opposing Pokémon, or breaks its Substitute."
+Hyper Fang,NORMAL,80,229,15,26,May make the opposing Pokémon flinch (26/256 chance).
+Hypnosis,PSYCHIC,0,153,20,0,Puts the opposing Pokémon to sleep.
+Ice Beam,ICE,95,255,10,26,May freeze the opposing Pokémon (26/256 chance).
+Ice Punch,ICE,75,255,15,26,May freeze the opposing Pokémon (26/256 chance).
+Jump Kick,FIGHTING,70,242,25,0,"If this attack misses or becomes ineffective, user loses 1 HP."
+Karate Chop,NORMAL,50,255,25,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Kinesis,PSYCHIC,0,204,15,0,Lowers the opposing Pokémon’s Accuracy by 1 stage.
+Leech Life,BUG,20,255,15,0,"If this attack is successful, user gains half of HP lost by the opposing Pokémon because of this attack."
+Leech Seed,GRASS,0,229,10,0,"After opponent’s attack segment, opponent loses X HP and user gains X HP, where X is opponent’s maximum HP divided by 16."
+Leer,NORMAL,0,255,30,0,Lowers the opposing Pokémon’s Defense by 1 stage.
+Lick,GHOST,20,255,30,0,May paralyze the opposing Pokémon. Additional effect doesn’t happen if the opposing Pokémon shares a type with this attack’s type.
+Light Screen,PSYCHIC,0,255,30,0,"During effect, user’s Special is effectively doubled for attacks by the opposing Pokémon, except in a critical hit."
+Lovely Kiss,NORMAL,0,191,10,0,Puts the opposing Pokémon to sleep.
+Low Kick,FIGHTING,50,229,20,77,May make the opposing Pokémon flinch (77/256 chance).
+Meditate,PSYCHIC,0,255,40,0,Raises user’s Attack by 1 stage.
+Mega Drain,GRASS,40,255,10,0,"If this attack is successful, user gains half of HP lost by the opposing Pokémon because of this attack."
+Mega Kick,NORMAL,120,191,5,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Mega Punch,NORMAL,80,216,20,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Metronome,NORMAL,0,255,10,0,"Uses a random move, which becomes the last move used by user and the last move user chose for use. Doesn’t use Metronome or Str..."
+Mimic,NORMAL,0,255,10,0,"In battles in which Exp. Points can be gained, copies an opponent’s move of player’s choice. In other battles, copies a random..."
+Minimize,NORMAL,0,255,20,0,Raises user’s Evade by 1 stage.
+Mirror Move,FLYING,0,255,20,0,"Uses last move the opposing Pokémon used, which becomes the last move user used and the last move the user chose for use."
+Mist,ICE,0,255,30,0,"attacks with stat stage reduction as a primary effect, when they are used by a Pokémon on the opposing Pokémon’s side, will fail."
+Night Shade,GHOST,0,255,15,0,Not affected by type immunities. Deals damage to the opposing Pokémon equal to user’s level.
+Pay Day,NORMAL,40,255,20,0,"In battles in which Exp. Points can be gained, if successful, an amount equal to twice user’s current level is added to the mon..."
+Peck,FLYING,35,255,35,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Petal Dance,GRASS,70,255,20,0,User uses this attack for three or four attack segments and can’t take any action. Effect ends at end of the turn in which this...
+Pin Missile,BUG,14,216,20,0,"Multi-hit attack. Calculates damage, and then deals that much damage to opponent two to five times in a row. 37.5% for 2 or 3 t..."
+Poison Gas,POISON,0,140,40,0,Poisons the opposing Pokémon.
+Poison Sting,POISON,15,255,35,52,May poison the opposing Pokémon (52/256 chance).
+PoisonPowder,POISON,0,191,35,0,Poisons the opposing Pokémon.
+Pound,NORMAL,40,255,35,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Psybeam,PSYCHIC,65,255,20,26,May confuse the opposing Pokémon (26/256 chance).
+Psychic,PSYCHIC,90,255,10,85,May lower the opposing Pokémon’s Special by 1 stage (85/256 chance).
+Psywave,PSYCHIC,1,204,15,0,Not affected by type immunities. Deals damage to the opposing Pokémon equal to a random integer from 1 through ((user’s level)*1.5)-1.
+Quick Attack,NORMAL,40,255,30,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las... Always strikes before other moves."
+Rage,NORMAL,20,255,20,0,User uses this attack during each of its attack segments and can’t take any other action. If user loses HP because of an oppone...
+Razor Leaf,GRASS,55,242,25,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Razor Wind,NORMAL,80,191,10,0,Two-turn attack.
+Recover,NORMAL,0,255,20,0,"Recovers HP. Will fail if user’s HP is full, or the user’s maximum HP minus user’s current HP plus 1 is divisible by 256. User gains half of its maximum HP."
+Reflect,PSYCHIC,0,255,20,0,"During effect, user’s Defense is effectively doubled except in a critical hit. Effect ends when user leaves the battle."
+Rest,PSYCHIC,0,255,10,0,"Recovers HP. Will fail if user’s HP is full, or the user’s maximum HP minus user’s current HP plus 1 is divisible by 256. User gains all HP, and user sleeps with a sleep count of 2, even if user is poisoned, burned, paralyzed, or frozen."
+Roar,NORMAL,0,255,20,0,Ends wild Pokémon battles. Fails if battle is a trainer battle.
+Rock Slide,ROCK,75,229,10,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Rock Throw,ROCK,50,165,15,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Rolling Kick,FIGHTING,60,216,15,77,May make the opposing Pokémon flinch (77/256 chance).
+Sand-Attack,NORMAL,0,255,15,0,Lowers the opposing Pokémon’s Accuracy by 1 stage.
+Scratch,NORMAL,40,255,35,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Screech,NORMAL,0,216,40,0,Lowers user’s Defense by 2 stages.
+Seismic Toss,FIGHTING,1,255,20,0,Not affected by type immunities. Deals damage to the opposing Pokémon equal to user’s level.
+Selfdestruct,NORMAL,130,255,5,0,"User faints, after damage calculation. The opposing Pokémon’s Defense is treated as halved in the damage calculation."
+Sharpen,NORMAL,0,255,30,0,Raises user’s Attack by 1 stage.
+Sing,NORMAL,0,140,15,0,Puts the opposing Pokémon to sleep.
+Skull Bash,NORMAL,100,255,15,0,Two-turn attack.
+Sky Attack,FLYING,140,229,5,0,Two-turn attack.
+Slam,NORMAL,80,191,20,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Slash,NORMAL,70,255,20,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Sleep Powder,GRASS,0,191,15,0,Puts the opposing Pokémon to sleep.
+Sludge,POISON,65,255,20,103,May poison the opposing Pokémon (103/256 chance).
+Smog,POISON,20,178,20,103,May poison the opposing Pokémon (103/256 chance).
+SmokeScreen,NORMAL,0,255,20,0,Lowers the opposing Pokémon’s Accuracy by 1 stage.
+Softboiled,NORMAL,0,255,10,0,"Recovers HP. Will fail if user’s HP is full, or the user’s maximum HP minus user’s current HP plus 1 is divisible by 256. User gains half of its maximum HP."
+SolarBeam,GRASS,120,255,10,0,Two-turn attack.
+SonicBoom,NORMAL,1,229,20,0,Not affected by type immunities. Deals 20 damage to the opposing Pokémon.
+Spike Cannon,NORMAL,20,255,15,0,"Multi-hit attack. Calculates damage, and then deals that much damage to opponent two to five times in a row. 37.5% for 2 or 3 t..."
+Splash,NORMAL,0,255,40,0,Does nothing.
+Spore,GRASS,0,255,15,0,Puts the opposing Pokémon to sleep.
+Stomp,NORMAL,65,255,20,77,May make the opposing Pokémon flinch (77/256 chance).
+Strength,NORMAL,80,255,15,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+String Shot,BUG,0,242,40,0,Lowers the opposing Pokémon’s Speed by 1 stage.
+Struggle,NORMAL,50,255,10,0,"If successful, user loses 1/4 of HP lost by the opposing Pokémon because of this attack (recoil). In If successful, user loses half of HP lost by opponent because of this attack (recoil). No PP is deducted from this attack. In"
+Stun Spore,GRASS,0,191,30,0,Paralyzes the opposing Pokémon. Not affected by type immunities.
+Submission,FIGHTING,80,204,25,0,"If successful, user loses 1/4 of HP lost by the opposing Pokémon because of this attack (recoil). In If successful, user loses 1/4 of HP lost by the opposing Pokémon because of this attack (recoil). In"
+Substitute,NORMAL,0,255,10,0,Creates a substitute using 1/4 of its maximum HP.
+Super Fang,NORMAL,1,229,10,0,Deals damage to opponent equal to the greater of 1 or half of opponent’s current HP. Not affected by type immunities.
+Supersonic,NORMAL,0,140,20,0,Confuses the opposing Pokémon.
+Surf,WATER,95,255,15,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Swift,NORMAL,60,255,20,0,Hits without fail.
+Swords Dance,NORMAL,0,255,30,0,Raises user’s Attack by 2 stages.
+Tackle,NORMAL,35,242,35,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Tail Whip,NORMAL,0,255,30,0,Lowers the opposing Pokémon’s Defense by 1 stage.
+Take Down,NORMAL,90,216,20,0,"If successful, user loses 1/4 of HP lost by the opposing Pokémon because of this attack (recoil). In If successful, user loses 1/4 of HP lost by the opposing Pokémon because of this attack (recoil). In"
+Teleport,PSYCHIC,0,255,20,0,Ends wild Pokémon battles. Fails if battle is a trainer battle.
+Thrash,NORMAL,90,255,20,0,User uses this attack for three or four attack segments and can’t take any action. Effect ends at end of the turn in which this...
+Thunder,ELECTRIC,120,178,10,0,May paralyze the opposing Pokémon. Additional effect doesn’t happen if the opposing Pokémon shares a type with this attack’s type.
+Thunder Wave,ELECTRIC,0,255,20,0,Paralyzes the opposing Pokémon. Not affected by type immunities.
+ThunderPunch,ELECTRIC,75,255,15,0,May paralyze the opposing Pokémon. Additional effect doesn’t happen if the opposing Pokémon shares a type with this attack’s type.
+ThunderShock,ELECTRIC,40,255,30,0,May paralyze the opposing Pokémon. Additional effect doesn’t happen if the opposing Pokémon shares a type with this attack’s type.
+Thunderbolt,ELECTRIC,95,255,15,0,May paralyze the opposing Pokémon. Additional effect doesn’t happen if the opposing Pokémon shares a type with this attack’s type.
+Toxic,POISON,0,216,10,0,"Poisons the opposing Pokémon. ""Badly"" poisons the opposing Pokémon."
+Transform,NORMAL,0,255,10,0,"User’s current types, moves, Attack, Defense, Speed, Special, stat stages, and species become those of opponent. Each move copi..."
+Tri Attack,NORMAL,80,255,10,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Twineedle,BUG,25,255,20,0,"May poison the opposing Pokémon. Calculates damage, then deals that much damage to the opposing Pokémon two times in a row."
+ViceGrip,NORMAL,55,255,30,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Vine Whip,GRASS,35,255,10,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Water Gun,WATER,40,255,25,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Waterfall,WATER,80,255,15,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Whirlwind,NORMAL,0,216,20,0,Ends wild Pokémon battles. Fails if battle is a trainer battle.
+Wing Attack,FLYING,35,255,35,0,"This attack deals damage to opponent equal to 2 times the last damage dealt. Will miss unless this attack strikes last, the las..."
+Withdraw,WATER,0,255,40,0,Raises user’s Defense by 1 stage.
+Wrap,NORMAL,15,216,20,0,"Multi-turn attack. Unless this attack misses, even if opponent is immune to this attack, the effect begins if this attack isn’t..."

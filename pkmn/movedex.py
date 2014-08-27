@@ -1,20 +1,87 @@
-"""Contains the necessary information to define a move.
+import typedex
 
-   Information taken from veekun pokedex http://veekun.com/dex/moves
-"""
+class Movedex():
+    """Creates a movedex for generation 1 to 5."""
+    
+    def __init__(self):
+        self.dex = {1: {}, 2: {}, 3: {}, 4:{}, 5:{}}
+        
+        for x in range(1, 6):
+            self.files(x)
+        
+    def files(self, gen):
+        if gen == 1:
+            filename = r".\movedex_data\gen1movedex.csv"
+        elif gen == 2:
+            filename = r".\movedex_data\gen2movedex.csv"
+        elif gen == 3:
+            filename = r".\movedex_data\gen3movedex.csv"
+        elif gen == 4:
+            filename = r".\movedex_data\gen4movedex.csv"
+        elif gen == 5:
+            filename = r".\movedex_data\gen5movedex.csv"
+        
+        self.create_dex(gen, filename)
+    
+    def find_category(self, gen, type):
+        categories = {"Physical": {"Normal", "Fighting", "Flying", "Ground", 
+                                 "Rock", "Bug", "Ghost", "Poison", "Steel"},
+                      "Special": {"Water", "Grass", "Fire", "Ice", "Electric",
+                                "Psychic", "Dragon", "Dark"},
+                      "Other": "???"}
+        if gen < 4:
+            for category in categories.keys():
+                if type in categories[category]:
+                    return category
+                    break
+    
+    def create_dex(self, gen, filename):
+        with open(filename) as f:
+            f.readline()
+            for lines in f:
+                info = lines.split(",")
+                name = info[0].strip()
+                type = info[1].strip()
+                if gen < 4:
+                    category = self.find_category(gen, type)
+                else:
+                    category = info[2].strip()
+                if gen < 3:
+                    power = int(info[2].strip())
+                    accuracy = round(int(info[3].strip())*100/255)
+                    pp = int(info[4].strip())
+                    effect_pct = round(int(info[5].strip())*100/255)
+                elif gen == 3:
+                    power = int(info[2].strip())
+                    accuracy = int(info[3].strip())
+                    pp = int(info[4].strip())
+                    effect_pct = round(int(info[5].strip()))
+                else:
+                    power = int(info[3].strip())
+                    accuracy = int(info[4].strip())
+                    pp = int(info[5].strip())
+                    effect_pct = int(info[6].strip())
+                
+                move = Moves(gen, name, category, type, power, pp, 
+                             accuracy, effect_pct)
+                    
+                self.dex[gen].update({name: move})
 
 class Moves():
-    """Defines a move
+    """
        
-       Variables needed for initialization:
+       Initialized variables:
+       gen (int): Generation of the move
        name (str): Name of the move
        category (str): Category of the move
        type (str): Type of the move
        power (int): Power of the move
        pp (int): Maximum number of power point
        accuracy (int): Percentage to hit
+       effect_pct (int): Percentage to get the effect
        
-       Variables created based on initial variables:
+       Generated variables:
+       recoil (bool): True if the move does recoil damage
        high_crit (bool): True if it's high crit ratio, false otherwise
        priority (int): Priority number
        contact (bool): Makes contact with other pokemon
@@ -23,8 +90,6 @@ class Moves():
        recharge (bool): Move must recharge after being used
        base (str): Base of the move
        num_hit (int): Number of time the move can hit
-       effect_target (str): Status aliment, foe stats reduction, etc.
-       effect_chance (int): Percentage to get the effect
     """
 
     charge_moves = {"Blast Burn", "Frenzy Plant", "Giga Impact", 
@@ -249,14 +314,21 @@ class Moves():
     
     ko_moves = {"Fissure", "Guillotine", "Horn Drill", "Sheer Cold"}
     
-    def __init__(self, name, category, type, power, pp, accuracy):
+    recoil_moves = {"Brave Bird", "Double-Edge", "Flare Blitz", "Head Charge",
+              "Head Smash", "Submission", "Take Down", "Volt Tackle",
+              "Wild Charge", "Wood Hammer"}
+    
+    def __init__(self, gen, name, category, type, power, pp, accuracy, effect_pct):
+        self.gen = gen
         self.name = name
         self.category = category
-        self.type = type
+        self.type = typedex.all.dex[gen][type]
         self.power = power
         self.pp = pp
         self.accuracy = accuracy
+        self.effect_pct = effect_pct
         
+        self.check_recoil()
         self.check_high_crit()
         self.check_priority()
         self.check_contact()
@@ -265,23 +337,22 @@ class Moves():
         self.check_recharge()
         self.check_base()
         self.check_num_hit()
-    
-    def __str__(self):
-        return "{} is a {} {} move with a power of {}, {} PP and {}% accuracy"\
-               .format(self)
-    
-    def __repr__(self):
-        return "moves.Moves({0.name}, {0.category}, {0.type}, {0.power}, {0.pp}, " \
-                "{0.accuracy})".format(self)
-    
-    def check_high_crit(self):
-        """Checks if the move has a high critical hit ratio"""
         
+    #def __str__(self):
+    #    return "{} is a {} {} move with a power of {}, {} PP and {}% accuracy"\
+    #           .format(self)
+    
+    #def __repr__(self):
+    #    return "moves.Moves({0.name}, {0.category}, {0.type}, {0.power}, {0.pp}, " \
+    #            "{0.accuracy})".format(self)
+    
+    def check_recoil(self):
+        self.recoil = True if self.name in self.recoil_moves else False
+        
+    def check_high_crit(self):
         self.high_crit = True if self.name in self.high_crit_moves else False
     
     def check_priority(self):
-        """Sets the priority number of the move"""
-        
         for number in self.priority_moves.keys():
             if self.name in self.priority_moves[number]:
                 self.priority = number
@@ -290,8 +361,6 @@ class Moves():
             self.priority = 0
     
     def check_contact(self):
-        """Checks if the move makes contact"""
-        
         if self.category == "Physical":
             if self.name in self.contact_moves[self.category]:
                 self.contact = False
@@ -304,8 +373,6 @@ class Moves():
                 self.contact = False
     
     def check_target(self):
-        """Sets the move target"""
-        
         for keys in self.target_moves.keys():
             if self.name in self.target_moves[keys]:
                 self.target = keys
@@ -314,18 +381,12 @@ class Moves():
             self.target = "single opponent"
     
     def check_charge(self):
-        """Checks if the move needs a charging turn"""
-        
         self.charge = True if self.name in self.charge_moves else False
    
     def check_recharge(self):
-        """Checks if the moves must recharge"""
-        
         self.recharge = True if self.name in self.recharge_moves else False
         
     def check_base(self):
-        """Sets the base of the move"""
-        
         for keys in self.base_moves:
             if self.name in self.base_moves[keys]:
                 self.base = keys
@@ -334,8 +395,6 @@ class Moves():
             self.base = False
     
     def check_num_hit(self):
-        """Sets the number of time a move can hit"""
-        
         for keys in self.multi_hit_moves:
             if self.name in self.multi_hit_moves[keys]:
                 self.num_hit = keys
@@ -343,5 +402,4 @@ class Moves():
         else:
             self.num_hit = 1
 
-#used for testing
-m = Moves("Double Slap", "Physical", "Normal", 20, 20, 100)
+all = Movedex()

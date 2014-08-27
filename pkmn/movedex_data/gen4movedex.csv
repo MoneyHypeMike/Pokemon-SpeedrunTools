@@ -1,0 +1,468 @@
+Name,Type,Category,Power,Accuracy,PP,Effect%,Target,Flags,Description
+Absorb,GRASS,Special,20,100,25,0,Single exc. user,be,"If this attack is successful and the target loses HP because of this attack, user gains half that much HP but not less than 1 HP."
+Acid,POISON,Special,40,100,30,10,All opposing Pokémon,be,May lower the target’s Special Defense by 1 stage.
+Acid Armor,POISON,Status,0,0,40,0,User,d,Raises user’s Defense by 2 stages.
+Acupressure,NORMAL,Status,0,0,30,0,User or ally,d,"If any of the target’s stat stages can be raised, raises one of those stat stages chosen at random by 2."
+Aerial Ace,FLYING,Physical,60,0,20,0,Single exc. user,abef,
+Aeroblast,FLYING,Special,100,95,5,0,Single exc. user,bef,Good chance for a critical hit.
+Agility,PSYCHIC,Status,0,0,30,0,User,d,Raises user’s Speed by 2 stages.
+Air Cutter,FLYING,Special,55,95,25,0,All opposing Pokémon,bef,Good chance for a critical hit.
+Air Slash,FLYING,Special,75,95,20,30,Single exc. user,bef,May make the target flinch.
+Amnesia,PSYCHIC,Status,0,0,20,0,User,d,Raises user’s Special Defense by 2 stages.
+AncientPower,ROCK,Special,60,100,5,10,Single exc. user,be,"May raise user’s Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage."
+Aqua Jet,WATER,Physical,40,100,20,0,Single exc. user,abef,Priority level 1.
+Aqua Ring,WATER,Status,0,0,20,0,User,,"During effect, user gains 1/16 of its maximum HP after each turn."
+Aqua Tail,WATER,Physical,90,90,10,0,Single exc. user,abef,
+Arm Thrust,FIGHTING,Physical,15,100,20,0,Single exc. user,abef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Aromatherapy,GRASS,Status,0,0,5,0,User's side,d,"Each Pokémon (both in battle and not in battle) on the user’s side stops being poisoned, burned, paralyzed, frozen, and asleep."
+Assist,NORMAL,Status,0,0,20,0,No particular target,,"Uses a random move from a random Pokémon on user’s side, other than user and Eggs."
+Assurance,DARK,Physical,50,100,10,0,Single exc. user,abef,Power is doubled if the target lost HP this turn (even from Pain Split).
+Astonish,GHOST,Physical,30,100,15,30,Single exc. user,abe,May make the target flinch.
+Attack Order,BUG,Physical,90,100,15,0,Single exc. user,bef,Good chance for a critical hit.
+Attract,NORMAL,Status,0,100,15,0,Single exc. user,bce,Infatuates target.
+Aura Sphere,FIGHTING,Special,90,0,20,0,Single exc. user,bef,
+Aurora Beam,ICE,Special,65,100,20,10,Single exc. user,be,May lower the target’s Attack by 1 stage.
+Avalanche,ICE,Physical,60,100,10,0,Single exc. user,abef,Power is doubled if user lost HP because of a damaging attack by a Pokémon at the target’s position this turn. Priority level -4.
+Barrage,NORMAL,Physical,15,85,20,0,Single exc. user,bef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Barrier,PSYCHIC,Status,0,0,30,0,User,d,Raises user’s Defense by 2 stages.
+Baton Pass,NORMAL,Status,0,0,40,0,User,,Replaces user with a different unfainted non-Egg Pokémon not in battle with the same controller as user of user’s choice and tr...
+Beat Up,DARK,Physical,10,100,10,0,Single exc. user,bef,"Does one hit for user and each other unfainted non-Egg Pokémon on user’s side that aren’t poisoned, burned, paralyzed, frozen,..."
+Belly Drum,NORMAL,Status,0,0,10,0,User,d,User loses half max. HP and user’s Attack rises by 12 stages. Will fail if HP reduced would faint user or if user’s Attack can’...
+Bide,NORMAL,Physical,1,0,10,0,User,abf,"If successful and isn’t already in effect, the effect begins and X is set to 0. User uses this attack during each of its attack..."
+Bind,NORMAL,Physical,15,75,20,0,Single exc. user,abef,"Multi-turn attack. For three to six turns, the target can’t switch out or run, and after each turn except the last, target lose..."
+Bite,DARK,Physical,60,100,25,30,Single exc. user,abe,May make the target flinch.
+Blast Burn,FIRE,Special,150,90,5,0,Single exc. user,bef,"If successful, on the next turn, user can’t take any action and pauses during its attack segment."
+Blaze Kick,FIRE,Physical,85,90,10,10,Single exc. user,abe,Good chance for a critical hit. May burn the target.
+Blizzard,ICE,Special,120,70,5,10,All opposing Pokémon,be,"May freeze the target. During Hail, this attack can’t be evaded."
+Block,NORMAL,Status,0,0,5,0,Single exc. user,bce,"During effect, target can’t switch out or run."
+Body Slam,NORMAL,Physical,85,100,15,30,Single exc. user,abe,May paralyze the target.
+Bone Club,GROUND,Physical,65,85,20,10,Single exc. user,be,May make the target flinch.
+Bone Rush,GROUND,Physical,25,80,10,0,Single exc. user,bef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Bonemerang,GROUND,Physical,50,90,10,0,Single exc. user,bef,Attacks twice in a row.
+Bounce,FLYING,Physical,85,85,5,30,Single exc. user,abef,"Two-turn attack. While using, user is unaffected by most attacks. May paralyze target."
+Brave Bird,FLYING,Physical,120,100,15,0,Single exc. user,abef,"If successful and target loses HP because of this attack, user loses 1/3 that much HP (recoil)."
+Brick Break,FIGHTING,Physical,75,100,15,0,Single exc. user,abef,"Ignores the effect of Reflect. Unless this attack misses, even if this attack becomes ineffective because of type immunities, e..."
+Brine,WATER,Special,65,100,10,0,Single exc. user,bef,Power is doubled if the target has half its maximum HP or less.
+Bubble,WATER,Special,20,100,30,10,All opposing Pokémon,be,May lower the target’s Speed by 1 stage.
+BubbleBeam,WATER,Special,65,100,20,10,Single exc. user,be,May lower the target’s Speed by 1 stage.
+Bug Bite,BUG,Physical,60,100,20,0,Single exc. user,abef,"If successful and target is holding a Berry, user uses that item and that item is consumed."
+Bug Buzz,BUG,Special,90,100,10,10,Single exc. user,be,May lower the target’s Special Defense by 1 stage.
+Bulk Up,FIGHTING,Status,0,0,20,0,User,d,Raises user’s Attack and Defense by 1 stage.
+Bullet Punch,STEEL,Physical,40,100,30,0,Single exc. user,abef,Priority level 1.
+Bullet Seed,GRASS,Physical,10,100,30,0,Single exc. user,bef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Calm Mind,PSYCHIC,Status,0,0,20,0,User,d,Raises user’s Special Attack and Special Defense by 1 stage.
+Camouflage,NORMAL,Status,0,0,20,0,User,d,User’s type changes depending on the terrain.
+Captivate,NORMAL,Status,0,100,20,0,All opposing Pokémon,bce,Lowers the target’s Special Attack by 2 stages if its gender is different from the user’s.
+Charge,ELECTRIC,Status,0,0,20,0,User,d,"Until the end of the next turn and until user leaves battle, power of Electric attacks by user is doubled. When this attack is..."
+Charge Beam,ELECTRIC,Special,50,90,10,70,Single exc. user,bef,May raise user’s Special Attack by 1 stage.
+Charm,NORMAL,Status,0,100,20,0,Single exc. user,bce,Lowers the target’s Attack by 2 stages.
+Chatter,FLYING,Special,60,100,20,0,Single exc. user,b,"If successful and user’s original species is Chatot, this attack has up to a 31% chance of confusing target depending on user’s..."
+Clamp,WATER,Physical,35,75,10,0,Single exc. user,abef,"Multi-turn attack. For three to six turns, the target can’t switch out or run, and after each turn except the last, target lose..."
+Close Combat,FIGHTING,Physical,120,100,5,0,Single exc. user,abef,Lowers user’s Defense and Special Defense by 1 stage if this attack is successful.
+Comet Punch,NORMAL,Physical,18,85,15,0,Single exc. user,abef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Confuse Ray,GHOST,Status,0,100,10,0,Single exc. user,bce,Confuses the target.
+Confusion,PSYCHIC,Special,50,100,25,10,Single exc. user,be,May confuse the target.
+Constrict,NORMAL,Physical,10,100,35,10,Single exc. user,abe,May lower the target’s Speed by 1 stage.
+Conversion,NORMAL,Status,0,0,30,0,User,,"User’s types become the original type of one of user’s moves, except Curse or this move, chosen at random."
+Conversion 2,NORMAL,Status,0,0,30,0,User,,"User’s types change to a random type that the type of the last attack that targeted user is """"not very effective"""" or ineffective..."
+Copycat,NORMAL,Status,0,0,20,0,No particular target,,Uses the last move used by a Pokémon.
+Cosmic Power,PSYCHIC,Status,0,0,20,0,User,d,Raises user’s Defense and Special Defense by 1 stage.
+Cotton Spore,GRASS,Status,0,85,40,0,Single exc. user,bce,Lowers the target’s Speed by 2 stages.
+Counter,FIGHTING,Physical,1,100,20,0,No particular target,a,"If the last Pokémon that damaged user with a physical attack this turn is one of user’s opposing Pokémon, and there’s a Pokémon..."
+Covet,NORMAL,Physical,40,100,40,0,Single exc. user,abe,"If successful, user receives the item target is holding if user isn’t holding any items, if that item isn’t a Mail or a Griseou..."
+Crabhammer,WATER,Physical,90,85,10,0,Single exc. user,abef,Good chance for a critical hit.
+Cross Chop,FIGHTING,Physical,100,80,5,0,Single exc. user,abef,Good chance for a critical hit.
+Cross Poison,POISON,Physical,70,100,20,10,Single exc. user,abef,Good chance for a critical hit. May poison the target.
+Crunch,DARK,Physical,80,100,15,20,Single exc. user,abe,May lower the target’s Defense by 1 stage.
+Crush Claw,NORMAL,Physical,75,95,10,50,Single exc. user,abe,May lower the target’s Defense by 1 stage.
+Crush Grip,NORMAL,Physical,1,100,5,0,Single exc. user,abef,"The more HP the target has relative to its maximum HP, the greater this attack’s power, up to 121."
+Curse,GHOST,Status,0,0,10,0,Single exc. user,,"If user isn’t a Ghost type, lowers user’s Speed by 1 stage and raises user’s Attack and Defense by 1 stage. Otherwise, user los..."
+Cut,NORMAL,Physical,50,95,30,0,Single exc. user,abef,
+Dark Pulse,DARK,Special,80,100,15,20,Single exc. user,bef,May make the target flinch.
+Dark Void,DARK,Status,0,80,10,0,All opposing Pokémon,bce,Puts the target to sleep.
+Defend Order,BUG,Status,0,0,10,0,User,d,Raises user’s Defense and Special Defense by 1 stage.
+Defense Curl,NORMAL,Status,0,0,40,0,User,d,"Raises user’s Defense by 1 stage. Until user leaves battle, the power of Ice Ball and Rollout, when used by user, is doubled, e..."
+Defog,FLYING,Status,0,0,15,0,Single exc. user,be,"Lowers target’s evasiveness by 1 stage. Ends the effects of Light Screen, Mist, Reflect, Safeguard, Spikes, Stealth Rock, and T..."
+Destiny Bond,GHOST,Status,0,0,5,0,User,,"Until user’s next attack, if an attack by an opponent causes user to faint, that opponent also faints if that Pokémon is still..."
+Detect,FIGHTING,Status,0,0,5,0,User,,User avoids certain attacks used this turn by other Pokémon. Can fail if used multiple times in succession.
+Dig,GROUND,Physical,80,100,10,0,Single exc. user,abef,"Two-turn attack. While using, user is unaffected by most attacks."
+Disable,NORMAL,Status,0,80,20,0,Single exc. user,be,"For four to seven turns, the last move used by the target when the effect began can’t be used or chosen for use by the target."
+Discharge,ELECTRIC,Special,80,100,15,30,All exc. user,bef,May paralyze the target.
+Dive,WATER,Physical,80,100,10,0,Single exc. user,abef,"Two-turn attack. While using, user is unaffected by most attacks."
+Dizzy Punch,NORMAL,Physical,70,100,10,20,Single exc. user,abe,May confuse the target.
+Doom Desire,STEEL,Special,120,85,5,0,Single exc. user,,"Calculates damage, then, after three turns, deals that damage to the target."
+Double Hit,NORMAL,Physical,35,90,10,0,Single exc. user,abef,Attacks twice in a row.
+Double Kick,FIGHTING,Physical,30,100,30,0,Single exc. user,abef,Attacks twice in a row.
+Double Team,NORMAL,Status,0,0,15,0,User,d,Raises user’s evasiveness by 1 stage.
+Double-Edge,NORMAL,Physical,120,100,15,0,Single exc. user,abef,"If successful and target loses HP because of this attack, user loses 1/3 that much HP (recoil)."
+DoubleSlap,NORMAL,Physical,15,85,10,0,Single exc. user,abef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Draco Meteor,DRAGON,Special,140,90,5,100,Single exc. user,bef,Lowers user’s Special Attack by 2 stages if this attack is successful.
+Dragon Claw,DRAGON,Physical,80,100,15,0,Single exc. user,abef,
+Dragon Dance,DRAGON,Status,0,0,20,0,User,d,Raises user’s Attack and Speed by 1 stage.
+Dragon Pulse,DRAGON,Special,90,100,10,0,Single exc. user,bef,
+Dragon Rage,DRAGON,Special,1,100,10,0,Single exc. user,bef,Deals 40 damage to the target. Affected by type immunities.
+Dragon Rush,DRAGON,Physical,100,75,10,20,Single exc. user,abef,May make the target flinch.
+DragonBreath,DRAGON,Special,60,100,20,30,Single exc. user,bef,May paralyze the target.
+Drain Punch,FIGHTING,Physical,60,100,5,0,Single exc. user,abef,"If this attack is successful and the target loses HP because of this attack, user gains half that much HP but not less than 1 HP."
+Dream Eater,PSYCHIC,Special,100,100,15,0,Single exc. user,be,"Fails unless target is asleep. If successful and target loses HP because of this attack, user gains half that much HP but not l..."
+Drill Peck,FLYING,Physical,80,100,20,0,Single exc. user,abef,
+DynamicPunch,FIGHTING,Physical,100,50,5,100,Single exc. user,abe,May confuse the target.
+Earth Power,GROUND,Special,90,100,10,10,Single exc. user,bef,May lower the target’s Special Defense by 1 stage.
+Earthquake,GROUND,Physical,100,100,10,0,All exc. user,bef,Power is doubled if the target is using Dig.
+Egg Bomb,NORMAL,Physical,100,75,10,0,Single exc. user,bef,
+Embargo,DARK,Status,0,100,15,0,Single exc. user,be,"For five turns, effects from target’s item are not applied, target can’t throw items, and items can’t be used on target."
+Ember,FIRE,Special,40,100,25,10,Single exc. user,be,May burn the target.
+Encore,NORMAL,Status,0,100,5,0,Single exc. user,be,"For four to eight turns, the target is forced to use the attack it last used when this effect began."
+Endeavor,NORMAL,Physical,1,100,5,0,Single exc. user,abef,Deals damage to target equal to target’s current HP minus user’s current HP. Affected by type immunities.
+Endure,NORMAL,Status,0,0,10,0,User,,"Until the end of the turn, if an attack by other Pokémon would reduce user’s HP to less than 1, it reduces user’s HP to 1 inste..."
+Energy Ball,GRASS,Special,80,100,10,10,Single exc. user,be,May lower the target’s Special Defense by 1 stage.
+Eruption,FIRE,Special,150,100,5,0,All opposing Pokémon,bef,"This attack’s power equals int(user’s current HP * 150 / user’s maximum HP) or 1, whichever is greater."
+Explosion,NORMAL,Physical,250,100,5,0,All exc. user,bef,"User faints, after damage calculation. The target’s Defense is treated as halved in damage calculation."
+Extrasensory,PSYCHIC,Special,80,100,30,10,Single exc. user,be,May make the target flinch.
+ExtremeSpeed,NORMAL,Physical,80,100,5,0,Single exc. user,abef,Priority level 1.
+Facade,NORMAL,Physical,70,100,20,0,Single exc. user,abe,"Power is doubled if user is poisoned, burned, or paralyzed."
+Faint Attack,DARK,Physical,60,0,20,0,Single exc. user,abef,
+Fake Out,NORMAL,Physical,40,100,10,100,Single exc. user,abe,May make target flinch. Priority level 1.
+Fake Tears,DARK,Status,0,100,20,0,Single exc. user,bce,Lowers the target’s Special Defense by 2 stages.
+False Swipe,NORMAL,Physical,40,100,40,0,Single exc. user,abef,"If this attack’s damage would reduce target’s HP to less than 1, it reduces it to 1 instead."
+FeatherDance,FLYING,Status,0,100,15,0,Single exc. user,bce,Lowers the target’s Attack by 2 stages.
+Feint,NORMAL,Physical,50,100,10,0,Single exc. user,,"Ignores effect of Protect and Detect. If successful, target’s Protect or Detect is no longer in effect this turn. Fails unless..."
+Fire Blast,FIRE,Special,120,85,5,10,Single exc. user,be,May burn the target.
+Fire Fang,FIRE,Physical,65,95,15,10,Single exc. user,abef,May burn the target. May make the target flinch. Ignores effect of Wonder Guard.
+Fire Punch,FIRE,Physical,75,100,15,10,Single exc. user,abe,May burn the target.
+Fire Spin,FIRE,Special,15,70,15,0,Single exc. user,bef,"Multi-turn attack. For three to six turns, the target can’t switch out or run, and after each turn except the last, target lose..."
+Fissure,GROUND,Physical,1,30,5,0,Single exc. user,be,One-hit KO. Deals damage to target equal to target’s max. HP. Ineffective if target’s level is greater than user’s level. When...
+Flail,NORMAL,Physical,1,100,15,0,Single exc. user,abef,"Power ranges to 20 to 200, and is higher the less HP the user has."
+Flame Wheel,FIRE,Physical,60,100,25,10,Single exc. user,abe,"May burn the target. If user is frozen and it chose this move for use, it thaws out before this attack is used."
+Flamethrower,FIRE,Special,95,100,15,10,Single exc. user,be,May burn the target.
+Flare Blitz,FIRE,Physical,120,100,15,10,Single exc. user,abe,"If successful and target loses HP because of this attack, user loses 1/3 that much HP (recoil). May burn target. If user is fro..."
+Flash,NORMAL,Status,0,100,20,0,Single exc. user,bce,Lowers the target’s accuracy by 1 stage.
+Flash Cannon,STEEL,Special,80,100,10,10,Single exc. user,bef,May lower the target’s Special Defense by 1 stage.
+Flatter,DARK,Status,0,100,15,0,Single exc. user,bce,Raises the target’s Special Attack by 1 stage and confuses the target.
+Fling,DARK,Physical,1,100,10,0,Single exc. user,be,"As part of this attack’s use, user throws the item it’s holding at target and that item is consumed after damage calculation. T..."
+Fly,FLYING,Physical,90,95,15,0,Single exc. user,abef,"Two-turn attack. While using, user is unaffected by most attacks."
+Focus Blast,FIGHTING,Special,120,70,5,10,Single exc. user,be,May lower the target’s Special Defense by 1 stage.
+Focus Energy,NORMAL,Status,0,0,30,0,User,d,"During effect, attacks by user have a heightened chance for a critical hit."
+Focus Punch,FIGHTING,Physical,150,100,20,0,Single exc. user,ab,Fails if the user was damaged by an attack by another Pokémon this turn. Priority level -3.
+Follow Me,NORMAL,Status,0,0,20,0,User,,"If an opponent uses an attack with a range of ""single Pokémon except user"", ""single opposing Pokémon"", or ""opposing Pokémon cho..."
+Force Palm,FIGHTING,Physical,60,100,10,30,Single exc. user,abef,May paralyze the target.
+Foresight,NORMAL,Status,0,0,40,0,Single exc. user,be,"If target’s evasiveness stat stage is greater than 0, it is treated as 0 in accuracy checks against target. Normal- and Fightin..."
+Frenzy Plant,GRASS,Special,150,90,5,0,Single exc. user,bef,"If successful, on the next turn, user can’t take any action and pauses during its attack segment."
+Frustration,NORMAL,Physical,1,100,20,0,Single exc. user,abef,"This attack’s power equals int((255-User’s friendship)*2/5) or 1, whichever is greater."
+Fury Attack,NORMAL,Physical,15,85,20,0,Single exc. user,abef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Fury Cutter,BUG,Physical,10,95,20,0,Single exc. user,abef,"A multiplier, X, raises by 1 if successful, up to a maximum of 4. X is reset to 0 when user leaves battle; when user falls asle..."
+Fury Swipes,NORMAL,Physical,18,80,15,0,Single exc. user,abef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Future Sight,PSYCHIC,Special,80,90,15,0,Single exc. user,,"Calculates damage, then, after three turns, deals that damage to the target."
+Gastro Acid,POISON,Status,0,100,10,0,Single exc. user,bce,"During effect, effects from target’s ability are not applied."
+Giga Drain,GRASS,Special,60,100,10,0,Single exc. user,be,"If this attack is successful and the target loses HP because of this attack, user gains half that much HP but not less than 1 HP."
+Giga Impact,NORMAL,Physical,150,90,5,0,Single exc. user,abef,"If successful, on the next turn, user can’t take any action and pauses during its attack segment."
+Glare,NORMAL,Status,0,75,30,0,Single exc. user,bce,Paralyzes the target.
+Grass Knot,GRASS,Special,1,100,20,0,Single exc. user,abef,"Power is 20 if the weight of target’s species is 10 kilograms or less, else 40 if 25 kg or less, else 60 if 50 kg or less, else..."
+GrassWhistle,GRASS,Status,0,55,15,0,Single exc. user,bce,Puts the target to sleep.
+Gravity,PSYCHIC,Status,0,0,5,0,Both sides,,"For five turns, airborne moves stop and can’t be used, accuracy is raised, and advantages of Levitate and Flying type are lost."
+Growl,NORMAL,Status,0,100,40,0,All opposing Pokémon,bce,Lowers the target’s Attack by 1 stage.
+Growth,NORMAL,Status,0,0,40,0,User,d,Raises user’s Special Attack by 1 stage.
+Grudge,GHOST,Status,0,0,5,0,User,,"Until user’s next attack, if an attack by an opponent causes user to faint, the PP of the move that attack’s user chose for use..."
+Guard Swap,PSYCHIC,Status,0,0,10,0,Single exc. user,be,"User adopts target’s current Defense and Sp. Def stat stages, and target adopts user’s current Defense and Sp. Def stat stages."
+Guillotine,NORMAL,Physical,1,30,5,0,Single exc. user,abe,One-hit KO. Deals damage to target equal to target’s max. HP. Ineffective if target’s level is greater than user’s level. When...
+Gunk Shot,POISON,Physical,120,70,5,30,Single exc. user,bef,May poison the target.
+Gust,FLYING,Special,40,100,35,0,Single exc. user,bef,Power is doubled if the target is using Fly or Bounce.
+Gyro Ball,STEEL,Physical,1,100,5,0,Single exc. user,abef,"This attack’s power equals int((the target’s current Speed*25)/max(user’s current Speed,1))+1, or 150, whichever is less."
+Hail,ICE,Status,0,0,10,0,Both sides,b,"Weather. For five turns, after each turn except the last, each Pokémon in battle, except Ice types, loses 1/16 max. HP simultan..."
+Hammer Arm,FIGHTING,Physical,100,90,10,0,Single exc. user,abef,Lowers user’s Speed by 1 stage if this attack is successful.
+Harden,NORMAL,Status,0,0,30,0,User,d,Raises user’s Defense by 1 stage.
+Haze,ICE,Status,0,0,30,0,Both sides,,Resets all stat stages on all Pokémon in battle to zero.
+Head Smash,ROCK,Physical,150,80,5,0,Single exc. user,abef,"If successful and the target loses HP because of this attack, user loses half that much HP (recoil)."
+Headbutt,NORMAL,Physical,70,100,15,30,Single exc. user,abe,May make the target flinch.
+Heal Bell,NORMAL,Status,0,0,5,0,User's side,d,"Each Pokémon (both in battle and not in battle) on the user’s side stops being poisoned, burned, paralyzed, frozen, and asleep."
+Heal Block,PSYCHIC,Status,0,100,15,0,All opposing Pokémon,be,"For five turns, the moves Heal Order, Milk Drink, Moonlight, Morning Sun, Recover, Rest, Roost, Slack Off, Softboiled, Swallow,..."
+Heal Order,BUG,Status,0,0,10,0,User,d,User gains half of its maximum HP. Fails if user’s HP is full.
+Healing Wish,PSYCHIC,Status,0,0,10,0,User,,"User faints as part of this attack’s use. When a Pokémon at user’s position enters battle during this attack segment, it gains..."
+Heart Swap,PSYCHIC,Status,0,0,10,0,Single exc. user,be,"Simultaneously, user adopts the target’s current stat stages, and the target adopts user’s current stat stages."
+Heat Wave,FIRE,Special,100,90,10,10,All opposing Pokémon,be,May burn the target.
+Helping Hand,NORMAL,Status,0,0,20,0,Ally,,Power of attacks by target this turn is multiplied by 1.5. Priority level 5.
+Hi Jump Kick,FIGHTING,Physical,100,90,20,0,Single exc. user,abef,"If this attack misses or becomes ineffective, user loses HP equal to the damage the attack would have dealt divided by 2."
+Hidden Power,NORMAL,Special,1,100,15,0,Single exc. user,bef,Power and type vary depending on the user’s individual values.
+Horn Attack,NORMAL,Physical,65,100,25,0,Single exc. user,abef,
+Horn Drill,NORMAL,Physical,1,30,5,0,Single exc. user,abe,One-hit KO. Deals damage to target equal to target’s max. HP. Ineffective if target’s level is greater than user’s level. When...
+Howl,NORMAL,Status,0,0,40,0,User,d,Raises user’s Attack by 1 stage.
+Hydro Cannon,WATER,Special,150,90,5,0,Single exc. user,bef,"If successful, on the next turn, user can’t take any action and pauses during its attack segment."
+Hydro Pump,WATER,Special,120,80,5,0,Single exc. user,bef,
+Hyper Beam,NORMAL,Special,150,90,5,0,Single exc. user,bef,"If successful, on the next turn, user can’t take any action and pauses during its attack segment."
+Hyper Fang,NORMAL,Physical,80,90,15,10,Single exc. user,abe,May make the target flinch.
+Hyper Voice,NORMAL,Special,90,100,10,0,All opposing Pokémon,be,
+Hypnosis,PSYCHIC,Status,0,70,20,0,Single exc. user,bce,"Puts the target to sleep. (This attack’s starting accuracy is 60 in HeartGold, Platinum, and SoulSilver.)"
+Ice Ball,ICE,Physical,30,90,20,0,Single exc. user,abef,"If successful and isn’t already in effect, the effect begins and X is set to 2. User uses this attack during each of its attack..."
+Ice Beam,ICE,Special,95,100,10,10,Single exc. user,be,May freeze the target.
+Ice Fang,ICE,Physical,65,95,15,10,Single exc. user,abef,May freeze the target. May make the target flinch.
+Ice Punch,ICE,Physical,75,100,15,10,Single exc. user,abe,May freeze the target.
+Ice Shard,ICE,Physical,40,100,30,0,Single exc. user,bef,Priority level 1.
+Icicle Spear,ICE,Physical,10,100,30,0,Single exc. user,bef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Icy Wind,ICE,Special,55,95,15,100,All opposing Pokémon,be,May lower the target’s Speed by 1 stage.
+Imprison,PSYCHIC,Status,0,0,10,0,User,,"During effect, moves that user knows can’t be used or chosen for use by each opposing Pokémon."
+Ingrain,GRASS,Status,0,0,20,0,User,d,"User can’t switch out or run, and after each turn, user gains 1/16 max. HP. Ground attacks are effective against user and user..."
+Iron Defense,STEEL,Status,0,0,15,0,User,d,Raises user’s Defense by 2 stages.
+Iron Head,STEEL,Physical,80,100,15,30,Single exc. user,abef,May make the target flinch.
+Iron Tail,STEEL,Physical,100,75,15,30,Single exc. user,abe,May lower the target’s Defense by 1 stage.
+Judgment,NORMAL,Special,100,100,10,0,Single exc. user,bef,"If user is holding a Plate, this attack’s type depends on the item held."
+Jump Kick,FIGHTING,Physical,85,95,25,0,Single exc. user,abef,"If this attack misses or becomes ineffective, user loses HP equal to the damage the attack would have dealt divided by 2."
+Karate Chop,FIGHTING,Physical,50,100,25,0,Single exc. user,abef,Good chance for a critical hit.
+Kinesis,PSYCHIC,Status,0,80,15,0,Single exc. user,bce,Lowers the target’s accuracy by 1 stage.
+Knock Off,DARK,Physical,20,100,20,0,Single exc. user,abe,"If successful and target isn’t holding Griseous Orb, target drops the item it’s holding for the rest of the battle even if targ..."
+Last Resort,NORMAL,Physical,130,100,5,0,Single exc. user,abef,"Fails unless user has two or more moves and either doesn’t have this move or, for each other move slot it has with a move, had..."
+Lava Plume,FIRE,Special,80,100,15,30,All exc. user,bef,May burn the target.
+Leaf Blade,GRASS,Physical,90,100,15,0,Single exc. user,abef,Good chance for a critical hit.
+Leaf Storm,GRASS,Special,140,90,5,100,Single exc. user,bef,Lowers user’s Special Attack by 2 stages if this attack is successful.
+Leech Life,BUG,Physical,20,100,15,0,Single exc. user,abe,"If this attack is successful and the target loses HP because of this attack, user gains half that much HP but not less than 1 HP."
+Leech Seed,GRASS,Status,0,90,10,0,Single exc. user,bce,After each
+Leer,NORMAL,Status,0,100,30,0,All opposing Pokémon,bce,Lowers the target’s Defense by 1 stage.
+Lick,GHOST,Physical,20,100,30,30,Single exc. user,abe,May paralyze the target.
+Light Screen,PSYCHIC,Status,0,0,30,0,User's side,d,"For five turns, special attacks against Pokémon on user’s side deal reduced damage."
+Lock-On,NORMAL,Status,0,0,5,0,Single exc. user,be,"Until the end of the next turn, attacks by user against target can’t be evaded and do not miss target because it’s using a two-..."
+Lovely Kiss,NORMAL,Status,0,75,10,0,Single exc. user,bce,Puts the target to sleep.
+Low Kick,FIGHTING,Physical,1,100,20,0,Single exc. user,abef,"Power is 20 if the weight of target’s species is 10 kilograms or less, else 40 if 25 kg or less, else 60 if 50 kg or less, else..."
+Lucky Chant,NORMAL,Status,0,0,30,0,User's side,,"For five turns, no attacks against any Pokémon in battle on user’s side can be critical hits."
+Lunar Dance,PSYCHIC,Status,0,0,10,0,User,,User faints. The next Pokémon entering battle gains all HP and PP and is cured of status problems.
+Luster Purge,PSYCHIC,Special,70,100,5,50,Single exc. user,be,May lower the target’s Special Defense by 1 stage.
+Mach Punch,FIGHTING,Physical,40,100,30,0,Single exc. user,abef,Priority level 1.
+Magic Coat,PSYCHIC,Status,0,0,15,0,No particular target,,"The next time this turn, if user is target of an attack with flag ""c"" by other Pokémon, instead user uses that attack against t..."
+Magical Leaf,GRASS,Special,60,0,20,0,Single exc. user,bef,
+Magma Storm,FIRE,Special,120,70,5,0,Single exc. user,bef,"Multi-turn attack. For three to six turns, the target can’t switch out or run, and after each turn except the last, target lose..."
+Magnet Bomb,STEEL,Physical,60,0,20,0,Single exc. user,bef,
+Magnet Rise,ELECTRIC,Status,0,0,10,0,User,,"For five turns, user is immune to damaging Ground attacks, and user is unaffected by Spikes and Toxic Spikes, and user can swit..."
+Magnitude,GROUND,Physical,1,100,30,0,All exc. user,bef,"Power is 10, 30, 50, 70, 90, 110, or 150. If a target is using Dig, this attack’s power is doubled for that target."
+Me First,NORMAL,Status,0,0,20,0,Single opposing Pokémon,b,"If user strikes before target this turn and the move target chose for use this turn is a damaging move other than Chatter, Coun..."
+Mean Look,NORMAL,Status,0,0,5,0,Single exc. user,bce,"During effect, target can’t switch out or run."
+Meditate,PSYCHIC,Status,0,0,40,0,User,d,Raises user’s Attack by 1 stage.
+Mega Drain,GRASS,Special,40,100,15,0,Single exc. user,be,"If this attack is successful and the target loses HP because of this attack, user gains half that much HP but not less than 1 HP."
+Mega Kick,NORMAL,Physical,120,75,5,0,Single exc. user,abef,
+Mega Punch,NORMAL,Physical,80,85,20,0,Single exc. user,abef,
+Megahorn,BUG,Physical,120,85,10,0,Single exc. user,abef,
+Memento,DARK,Status,0,100,10,0,Single exc. user,be,User faints as part of this attack’s use. Lowers target’s Attack and Special Attack by 2 stages each.
+Metal Burst,STEEL,Physical,1,100,10,0,No particular target,e,"If the last Pokémon that damaged user with an attack this turn is one of user’s opposing Pokémon, and there’s a Pokémon at the..."
+Metal Claw,STEEL,Physical,50,95,35,10,Single exc. user,abe,May raise user’s Attack by 1 stage.
+Metal Sound,STEEL,Status,0,85,40,0,Single exc. user,bce,Lowers the target’s Special Defense by 2 stages.
+Meteor Mash,STEEL,Physical,100,85,10,20,Single exc. user,abef,May raise user’s Attack by 1 stage.
+Metronome,NORMAL,Status,0,0,10,0,No particular target,,Uses a random move.
+Milk Drink,NORMAL,Status,0,0,10,0,User,d,User gains half of its maximum HP. Fails if user’s HP is full.
+Mimic,NORMAL,Status,0,0,10,0,Single exc. user,b,Copies last move used by target. That move replaces this move. The copied move has 5 PP.
+Mind Reader,NORMAL,Status,0,0,5,0,Single exc. user,be,"Until the end of the next turn, attacks by user against target can’t be evaded and do not miss target because it’s using a two-..."
+Minimize,NORMAL,Status,0,0,20,0,User,d,"Raises user’s evasiveness by 1 stage. After use, Stomp has double power against the user."
+Miracle Eye,PSYCHIC,Status,0,0,40,0,Single exc. user,be,"If target’s evasiveness stat stage is greater than 0, it is treated as 0 in accuracy checks against target. Psychic attacks aga..."
+Mirror Coat,PSYCHIC,Special,1,100,20,0,No particular target,,"If the last Pokémon that damaged user with a special attack this turn is one of user’s opposing Pokémon, and there’s a Pokémon..."
+Mirror Move,FLYING,Status,0,0,20,0,No particular target,,"Uses with no particular target the last move that targeted user, was not prevented from being used, was not used by another mov..."
+Mirror Shot,STEEL,Special,65,85,10,30,Single exc. user,bef,May lower the target’s accuracy by 1 stage.
+Mist,ICE,Status,0,0,30,0,User's side,d,"For five turns, for each Pokémon in battle on user’s side, attacks and abilities by other Pokémon can’t lower that Pokémon’s st..."
+Mist Ball,PSYCHIC,Special,70,100,5,50,Single exc. user,be,May lower the target’s Special Attack by 1 stage.
+Moonlight,NORMAL,Status,0,0,5,0,User,d,"User gains 2/3 max. HP during Sunny Day; otherwise, user gains 1/4 max. HP during Rain Dance, Hail, fog, or Sandstorm; otherwis..."
+Morning Sun,NORMAL,Status,0,0,5,0,User,d,"User gains 2/3 max. HP during Sunny Day; otherwise, user gains 1/4 max. HP during Rain Dance, Hail, fog, or Sandstorm; otherwis..."
+Mud Bomb,GROUND,Special,65,85,10,30,Single exc. user,bef,May lower the target’s accuracy by 1 stage.
+Mud Shot,GROUND,Special,55,95,15,100,Single exc. user,bef,May lower the target’s Speed by 1 stage.
+Mud Sport,GROUND,Status,0,0,15,0,Both sides,,"During effect, power of Electric-type attacks by any Pokémon in battle is halved."
+Mud-Slap,GROUND,Special,20,100,10,100,Single exc. user,be,May lower the target’s accuracy by 1 stage.
+Muddy Water,WATER,Special,95,85,10,30,All opposing Pokémon,bef,May lower the target’s accuracy by 1 stage.
+Nasty Plot,DARK,Status,0,0,20,0,User,d,Raises user’s Special Attack by 2 stages.
+Natural Gift,NORMAL,Physical,1,100,15,0,Single exc. user,be,This attack’s type and power depend on the Berry user is holding. That item is consumed.
+Nature Power,NORMAL,Status,0,0,20,0,No particular target,,"In tall grass, very tall grass, or puddles, uses Seed Bomb. In caves or on rocky ground, uses Rock Slide. On snow, uses Blizzar..."
+Needle Arm,GRASS,Physical,60,100,15,30,Single exc. user,abe,May make the target flinch.
+Night Shade,GHOST,Special,1,100,15,0,Single exc. user,bef,Deals damage to the target equal to user’s level. Affected by type immunities.
+Night Slash,DARK,Physical,70,100,15,0,Single exc. user,abef,Good chance for a critical hit.
+Nightmare,GHOST,Status,0,100,15,0,Single exc. user,be,"Fails unless target is asleep. As long as target remains asleep, target loses 1/4 of its maximum HP after each turn."
+Octazooka,WATER,Special,65,85,10,50,Single exc. user,be,May lower the target’s accuracy by 1 stage.
+Odor Sleuth,NORMAL,Status,0,0,40,0,Single exc. user,be,"If target’s evasiveness stat stage is greater than 0, it is treated as 0 in accuracy checks against target. Normal- and Fightin..."
+Ominous Wind,GHOST,Special,60,100,5,10,Single exc. user,bef,"May raise user’s Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage."
+Outrage,DRAGON,Physical,120,100,15,0,Random opposing Pokémon,abef,Lasts two or three turns. User uses this attack during each of its attack segments and can’t take any other action. When effect...
+Overheat,FIRE,Special,140,90,5,100,Single exc. user,bef,Lowers user’s Special Attack by 2 stages if this attack is successful.
+Pain Split,NORMAL,Status,0,0,20,0,Single exc. user,be,"User’s HP and target’s HP become the average of user’s and target’s current HP, and are adjusted so that they don’t exceed thei..."
+Pay Day,NORMAL,Physical,40,100,20,0,Single exc. user,bef,"In battles in which Exp. Points can be gained, if successful and user is controlled by the player, an amount equal to five time..."
+Payback,DARK,Physical,50,100,10,0,Single exc. user,abef,Power is doubled if user strikes after the target this turn.
+Peck,FLYING,Physical,35,100,35,0,Single exc. user,abef,
+Perish Song,NORMAL,Status,0,0,5,0,Both sides,,"Each Pokémon gets a perish count of 4. After each turn, the perish count is reduced. When the count is 0, the Pokémon faints."
+Petal Dance,GRASS,Special,90,100,20,0,Random opposing Pokémon,abef,Lasts two or three turns. User uses this attack during each of its attack segments and can’t take any other action. When effect...
+Pin Missile,BUG,Physical,14,85,20,0,Single exc. user,bef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Pluck,FLYING,Physical,60,100,20,0,Single exc. user,abef,"If successful and target is holding a Berry, user uses that item and that item is consumed."
+Poison Fang,POISON,Physical,50,100,15,30,Single exc. user,abe,May badly poison the target.
+Poison Gas,POISON,Status,0,55,40,0,Single exc. user,bce,Poisons the target.
+Poison Jab,POISON,Physical,80,100,20,30,Single exc. user,abef,May poison the target.
+Poison Sting,POISON,Physical,15,100,35,30,Single exc. user,be,May poison the target.
+Poison Tail,POISON,Physical,50,100,25,10,Single exc. user,abef,Good chance for a critical hit. May poison the target.
+PoisonPowder,POISON,Status,0,75,35,0,Single exc. user,bce,Poisons the target.
+Pound,NORMAL,Physical,40,100,35,0,Single exc. user,abef,
+Powder Snow,ICE,Special,40,100,25,10,All opposing Pokémon,be,May freeze the target.
+Power Gem,ROCK,Special,70,100,20,0,Single exc. user,bef,
+Power Swap,PSYCHIC,Status,0,0,10,0,Single exc. user,be,"User adopts target’s current Attack and Sp. Atk stat stages, and target adopts user’s current Attack and Sp. Atk stat stages."
+Power Trick,PSYCHIC,Status,0,0,10,0,User,,"Swaps user’s Attack and Defense stats and sets a variable, X, for user’s position to 1 if it’s 0 or to 0 if it’s 1. X is reset..."
+Power Whip,GRASS,Physical,120,85,10,0,Single exc. user,abef,
+Present,NORMAL,Physical,1,90,15,0,Single exc. user,be,"At random, power is 40, 80, or 120, or target gains 1/4 of its maximum HP and this attack doesn’t deal damage."
+Protect,NORMAL,Status,0,0,10,0,User,,User avoids certain attacks used this turn by other Pokémon. Can fail if used multiple times in succession.
+Psybeam,PSYCHIC,Special,65,100,20,10,Single exc. user,be,May confuse the target.
+Psych Up,NORMAL,Status,0,0,10,0,Single exc. user,d,User adopts all of the target’s current stat stages.
+Psychic,PSYCHIC,Special,90,100,10,10,Single exc. user,be,May lower the target’s Special Defense by 1 stage.
+Psycho Boost,PSYCHIC,Special,140,90,5,100,Single exc. user,bef,Lowers user’s Special Attack by 2 stages if this attack is successful.
+Psycho Cut,PSYCHIC,Physical,70,100,20,0,Single exc. user,bef,Good chance for a critical hit.
+Psycho Shift,PSYCHIC,Status,0,90,10,0,Single exc. user,be,"If user has statuses, target gains that condition. If target gains that condition this way, user stops having that condition."
+Psywave,PSYCHIC,Special,1,80,15,0,Single exc. user,bef,Deals damage ranging from 50% to 150% of the user’s level.
+Punishment,DARK,Physical,1,100,5,0,Single exc. user,abef,"Power is60+, or 200, whichever is less, where X is the total of all of the target’s current stat stages that are greater than 0."
+Pursuit,DARK,Physical,40,100,20,0,Single exc. user,abe,"When an opponent switches out, if user chose this move for use and didn’t take its attack segment or use this attack yet this t..."
+Quick Attack,NORMAL,Physical,40,100,30,0,Single exc. user,abef,Priority level 1.
+Rage,NORMAL,Physical,20,100,20,0,Single exc. user,abef,"After using this attack, damage the user takes raises its Attack until the user doesn’t choose this move."
+Rain Dance,WATER,Status,0,0,5,0,Both sides,,"Weather. For five turns, Water-type attacks deal 50% more damage, and Fire-type attacks 50% less."
+Rapid Spin,NORMAL,Physical,20,100,40,0,Single exc. user,abef,"If successful, effects of multi-turn attacks and Leech Seed against user end, and effect of Spikes, Stealth Rock, and Toxic Spi..."
+Razor Leaf,GRASS,Physical,55,95,25,0,All opposing Pokémon,bef,Good chance for a critical hit.
+Razor Wind,NORMAL,Special,80,100,10,0,All opposing Pokémon,bef,Two-turn attack. Good chance for a critical hit.
+Recover,NORMAL,Status,0,0,10,0,User,d,User gains half of its maximum HP. Fails if user’s HP is full.
+Recycle,NORMAL,Status,0,0,10,0,User,,"If user isn’t holding an item, user receives the last item that was consumed this battle and was actually held by a Pokémon at..."
+Reflect,PSYCHIC,Status,0,0,20,0,User's side,d,"For five turns, damage from physical attacks that aren’t critical hits against any Pokémon in battle on user’s side is halved a..."
+Refresh,NORMAL,Status,0,0,20,0,User,d,"User is cured of burns, poison, and paralysis."
+Rest,PSYCHIC,Status,0,0,10,0,User,d,"User gains all HP; user sleeps with a sleep count of 3, even if user is poisoned, burned, paralyzed, frozen, or asleep."
+Return,NORMAL,Physical,1,100,20,0,Single exc. user,abef,"This attack’s power equals int((User’s friendship)*2/5) or 1, whichever is greater."
+Revenge,FIGHTING,Physical,60,100,10,0,Single exc. user,abef,Power is doubled if user lost HP because of a damaging attack by a Pokémon at the target’s position this turn. Priority level -4.
+Reversal,FIGHTING,Physical,1,100,15,0,Single exc. user,abef,"Power ranges to 20 to 200, and is higher the less HP the user has."
+Roar,NORMAL,Status,0,100,20,0,Single exc. user,be,"Ends wild Pokémon battles. In Trainer battles, replaces target with a different Pokémon. Priority level -6."
+Roar of Time,DRAGON,Special,150,90,5,0,Single exc. user,bef,"If successful, on the next turn, user can’t take any action and pauses during its attack segment."
+Rock Blast,ROCK,Physical,25,80,10,0,Single exc. user,bef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Rock Climb,NORMAL,Physical,90,85,20,20,Single exc. user,abef,May confuse the target.
+Rock Polish,ROCK,Status,0,0,20,0,User,d,Raises user’s Speed by 2 stages.
+Rock Slide,ROCK,Physical,75,90,10,30,All opposing Pokémon,be,May make the target flinch.
+Rock Smash,FIGHTING,Physical,40,100,15,50,Single exc. user,abe,May lower the target’s Defense by 1 stage.
+Rock Throw,ROCK,Physical,50,90,15,0,Single exc. user,bef,
+Rock Tomb,ROCK,Physical,50,80,10,100,Single exc. user,be,May lower the target’s Speed by 1 stage.
+Rock Wrecker,ROCK,Physical,150,90,5,0,Single exc. user,bef,"If successful, on the next turn, user can’t take any action and pauses during its attack segment."
+Role Play,PSYCHIC,Status,0,0,10,0,Single exc. user,,Changes user’s ability to that of target.
+Rolling Kick,FIGHTING,Physical,60,85,15,30,Single exc. user,abef,May make the target flinch.
+Rollout,ROCK,Physical,30,90,20,0,Single exc. user,abef,"If successful and isn’t already in effect, the effect begins and X is set to 2. User uses this attack during each of its attack..."
+Roost,FLYING,Status,0,0,10,0,User,d,User gains half of its maximum HP. Then attacks against user are normally effective against the Flying type this turn.
+Sacred Fire,FIRE,Physical,100,95,5,50,Single exc. user,be,"May burn the target. If user is frozen and it chose this move for use, it thaws out before this attack is used."
+Safeguard,NORMAL,Status,0,0,25,0,User's side,d,"For five turns, for each Pokémon in battle on user’s side, attacks by other Pokémon and items can’t cause poison, burn, paralys..."
+Sand Tomb,GROUND,Physical,15,70,15,0,Single exc. user,bef,"Multi-turn attack. For three to six turns, the target can’t switch out or run, and after each turn except the last, target lose..."
+Sand-Attack,GROUND,Status,0,100,15,0,Single exc. user,bce,Lowers the target’s accuracy by 1 stage.
+Sandstorm,ROCK,Status,0,0,10,0,Both sides,,"Weather. For five turns, after each turn except the last, each Pokémon in battle, except Ground, Rock, and Steel types, loses 1..."
+Scary Face,NORMAL,Status,0,90,10,0,Single exc. user,bce,Lowers the target’s Speed by 2 stages.
+Scratch,NORMAL,Physical,40,100,35,0,Single exc. user,abef,
+Screech,NORMAL,Status,0,85,40,0,Single exc. user,bce,Lowers the target’s Defense by 2 stages.
+Secret Power,NORMAL,Physical,70,100,20,30,Single exc. user,be,"In tall grass, very tall grass, or puddles, may put target to sleep. In caves or on rocky ground, may make target flinch. On sn..."
+Seed Bomb,GRASS,Physical,80,100,15,0,Single exc. user,bef,
+Seed Flare,GRASS,Special,120,85,5,40,Single exc. user,bef,May lower the target’s Special Defense by 2 stages.
+Seismic Toss,FIGHTING,Physical,1,100,20,0,Single exc. user,abef,Deals damage to the target equal to user’s level. Affected by type immunities.
+Selfdestruct,NORMAL,Physical,200,100,5,0,All exc. user,bef,"User faints, after damage calculation. The target’s Defense is treated as halved in damage calculation."
+Shadow Ball,GHOST,Special,80,100,15,20,Single exc. user,be,May lower the target’s Special Defense by 1 stage.
+Shadow Claw,GHOST,Physical,70,100,15,0,Single exc. user,abef,Good chance for a critical hit.
+Shadow Force,GHOST,Physical,120,100,5,0,Single exc. user,aef,"Two-turn attack. While using, user avoids other attacks. Ignores target’s Protect and Detect, and stops their effect this turn."
+Shadow Punch,GHOST,Physical,60,0,20,0,Single exc. user,abef,
+Shadow Sneak,GHOST,Physical,40,100,30,0,Single exc. user,abef,Priority level 1.
+Sharpen,NORMAL,Status,0,0,30,0,User,d,Raises user’s Attack by 1 stage.
+Sheer Cold,ICE,Special,1,30,5,0,Single exc. user,be,One-hit KO. Deals damage to target equal to target’s max. HP. Ineffective if target’s level is greater than user’s level. When...
+Shock Wave,ELECTRIC,Special,60,0,20,0,Single exc. user,bef,
+Signal Beam,BUG,Special,75,100,15,10,Single exc. user,bef,May confuse the target.
+Silver Wind,BUG,Special,60,100,5,10,Single exc. user,bef,"May raise user’s Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage."
+Sing,NORMAL,Status,0,55,15,0,Single exc. user,bce,Puts the target to sleep.
+Sketch,NORMAL,Status,0,0,1,0,Single exc. user,,Permanently copies move the last move used by target. That move replaces this move even after the battle ends or user leaves ba...
+Skill Swap,PSYCHIC,Status,0,0,10,0,Single exc. user,be,"Simultaneously, user adopts target’s ability, and target adopts user’s ability."
+Skull Bash,NORMAL,Physical,100,100,15,100,Single exc. user,abef,"Two-turn attack. On first attack segment of use, raises user’s Defense by 1 stage."
+Sky Attack,FLYING,Physical,140,90,5,30,Single exc. user,bef,Two-turn attack. Good chance for a critical hit. May make the target flinch.
+Sky Uppercut,FIGHTING,Physical,85,90,15,0,Single exc. user,abef,Can hit the target even if it’s using Fly or Bounce.
+Slack Off,NORMAL,Status,0,0,10,0,User,d,User gains half of its maximum HP. Fails if user’s HP is full.
+Slam,NORMAL,Physical,80,75,20,0,Single exc. user,abef,
+Slash,NORMAL,Physical,70,100,20,0,Single exc. user,abef,Good chance for a critical hit.
+Sleep Powder,GRASS,Status,0,75,15,0,Single exc. user,bce,Puts the target to sleep.
+Sleep Talk,NORMAL,Status,0,0,10,0,No particular target,,"Uses one of user’s moves, at random. No PP is spent for the move used."
+Sludge,POISON,Special,65,100,20,30,Single exc. user,be,May poison the target.
+Sludge Bomb,POISON,Special,90,100,10,30,Single exc. user,be,May poison the target.
+SmellingSalt,NORMAL,Physical,60,100,10,0,Single exc. user,abe,"If the target is paralyzed, power is doubled and, if this attack is successful, the target is cured of paralysis."
+Smog,POISON,Special,20,70,20,40,Single exc. user,be,May poison the target.
+SmokeScreen,NORMAL,Status,0,100,20,0,Single exc. user,bce,Lowers the target’s accuracy by 1 stage.
+Snatch,DARK,Status,0,0,10,0,No particular target,,"The next time this turn, if a Pokémon other than user uses an attack with flag ""d"" and that attack wasn’t used by another move,..."
+Snore,NORMAL,Special,40,100,15,30,Single exc. user,bef,May make the target flinch. Fails unless user is asleep.
+Softboiled,NORMAL,Status,0,0,10,0,User,d,User gains half of its maximum HP. Fails if user’s HP is full.
+SolarBeam,GRASS,Special,120,100,10,0,Single exc. user,bef,"Two-turn attack. Damage is halved except during Sunny Day or no weather. During Sunny Day, can be used immediately."
+SonicBoom,NORMAL,Special,1,90,20,0,Single exc. user,bef,Deals 20 damage to the target. Affected by type immunities.
+Spacial Rend,DRAGON,Special,100,95,5,0,Single exc. user,bef,Good chance for a critical hit.
+Spark,ELECTRIC,Physical,65,100,20,30,Single exc. user,abe,May paralyze the target.
+Spider Web,BUG,Status,0,0,10,0,Single exc. user,bce,"During effect, target can’t switch out or run."
+Spike Cannon,NORMAL,Physical,20,100,15,0,Single exc. user,bef,Multi-hit attack. Attacks two to five times in a row. 37.5% chance for two or three times; 12.5% chance for four or five times.
+Spikes,GROUND,Status,0,0,20,0,Opposing Pokémon's side,,Can be used up to three times. Opposing Pokémon that enter battle lose HP unless they are Flying type or have Levitate.
+Spit Up,NORMAL,Special,1,100,10,0,Single exc. user,bf,"Power is 100 times user’s Stockpile count. Damage variance is not done for this attack. As part of this attack’s use, after any..."
+Spite,GHOST,Status,0,100,10,0,Single exc. user,be,Lowers PP of last move used by target by 4.
+Splash,NORMAL,Status,0,0,40,0,User,,Does nothing.
+Spore,GRASS,Status,0,100,15,0,Single exc. user,bce,Puts the target to sleep.
+Stealth Rock,ROCK,Status,0,0,20,0,Opposing Pokémon's side,,Each opposing Pokémon that enter battle loses HP depending on the type matchup of the Rock type against it.
+Steel Wing,STEEL,Physical,70,90,25,10,Single exc. user,abef,May raise user’s Defense by 1 stage.
+Stockpile,NORMAL,Status,0,0,20,0,User,d,"Raises user’s Stockpile count by 1, and raises user’s Defense and Sp. Def by 1 stage. The Stockpile count is reset when user le..."
+Stomp,NORMAL,Physical,65,100,20,30,Single exc. user,abe,May make the target flinch. Power is doubled if Minimize is in effect for the target.
+Stone Edge,ROCK,Physical,100,80,5,0,Single exc. user,bef,Good chance for a critical hit.
+Strength,NORMAL,Physical,80,100,15,0,Single exc. user,abef,
+String Shot,BUG,Status,0,95,40,0,All opposing Pokémon,bce,Lowers the target’s Speed by 1 stage.
+Struggle,NORMAL,Physical,50,0,1,0,Single exc. user,abf,"This attack’s damage is not affected by user’s or target’s types. If successful, user loses 1/4 max. HP but not less than 1 HP."
+Stun Spore,GRASS,Status,0,75,30,0,Single exc. user,bce,Paralyzes the target.
+Submission,FIGHTING,Physical,80,80,25,0,Single exc. user,abef,"If successful and target loses HP because of this attack, user loses 1/4 that much HP (recoil)."
+Substitute,NORMAL,Status,0,0,10,0,User,d,Creates a substitute using 1/4 of user’s maximum HP.
+Sucker Punch,DARK,Physical,80,100,5,0,Single exc. user,abef,"Fails if the move target chose for use this turn is not a damaging move, or if target struck before user this turn. Priority le..."
+Sunny Day,FIRE,Status,0,0,5,0,Both sides,,"Weather. For five turns, Fire-type attacks deal 50% more damage, and Water-type attacks 50% less."
+Super Fang,NORMAL,Physical,1,90,10,0,Single exc. user,abe,Deals damage to the target equal to half of the target’s current HP. Affected by type immunities.
+Superpower,FIGHTING,Physical,120,100,5,0,Single exc. user,abe,Lowers user’s Attack and Defense by 1 stage if this attack is successful.
+Supersonic,NORMAL,Status,0,55,20,0,Single exc. user,bce,Confuses the target.
+Surf,WATER,Special,95,100,15,0,All exc. user,bef,"If the target is using Dive, this attack’s power is doubled."
+Swagger,NORMAL,Status,0,90,15,0,Single exc. user,bce,Raises the target’s Attack by 2 stages and confuses the target.
+Swallow,NORMAL,Status,0,0,10,0,User,d,User gains HP according to user’s Stockpile count: 1/4 max. HP if it’s 1; half max. HP if it’s 2; and all HP if it’s 3. Resets...
+Sweet Kiss,NORMAL,Status,0,75,10,0,Single exc. user,bce,Confuses the target.
+Sweet Scent,NORMAL,Status,0,100,20,0,All opposing Pokémon,bce,Lowers the target’s evasiveness by 1 stage.
+Swift,NORMAL,Special,60,0,20,0,All opposing Pokémon,bef,
+Switcheroo,DARK,Status,0,100,10,0,Single exc. user,be,"Simultaneously, user receives target’s item, and target receives user’s item."
+Swords Dance,NORMAL,Status,0,0,30,0,User,d,Raises user’s Attack by 2 stages.
+Synthesis,GRASS,Status,0,0,5,0,User,d,"User gains 2/3 max. HP during Sunny Day; otherwise, user gains 1/4 max. HP during Rain Dance, Hail, fog, or Sandstorm; otherwis..."
+Tackle,NORMAL,Physical,35,95,35,0,Single exc. user,abef,
+Tail Glow,BUG,Status,0,0,20,0,User,d,Raises user’s Special Attack by 2 stages.
+Tail Whip,NORMAL,Status,0,100,30,0,All opposing Pokémon,bce,Lowers the target’s Defense by 1 stage.
+Tailwind,FLYING,Status,0,0,30,0,User's side,d,"For three turns, the Speed of each Pokémon in battle on user’s side is doubled."
+Take Down,NORMAL,Physical,90,85,20,0,Single exc. user,abef,"If successful and target loses HP because of this attack, user loses 1/4 that much HP (recoil)."
+Taunt,DARK,Status,0,100,20,0,Single exc. user,be,"For three to five turns, non-damaging moves can’t be used or chosen for use by target."
+Teeter Dance,NORMAL,Status,0,100,20,0,All exc. user,be,Confuses the target.
+Teleport,PSYCHIC,Status,0,0,20,0,User,,User runs from the wild Pokémon battle. Fails if battle is a Trainer battle.
+Thief,DARK,Physical,40,100,10,0,Single exc. user,abe,"If successful, user receives the item target is holding if user isn’t holding any items, if that item isn’t a Mail or a Griseou..."
+Thrash,NORMAL,Physical,90,100,20,0,Random opposing Pokémon,abef,Lasts two or three turns. User uses this attack during each of its attack segments and can’t take any other action. When effect...
+Thunder,ELECTRIC,Special,120,70,10,30,Single exc. user,be,"May paralyze target. During Rain Dance, can’t be evaded. Otherwise, during Sunny Day, accuracy is 50. Can hit target even if it..."
+Thunder Fang,ELECTRIC,Physical,65,95,15,10,Single exc. user,abef,May paralyze the target. May make the target flinch.
+Thunder Wave,ELECTRIC,Status,0,100,20,0,Single exc. user,bce,Paralyzes the target.
+ThunderPunch,ELECTRIC,Physical,75,100,15,10,Single exc. user,abe,May paralyze the target.
+ThunderShock,ELECTRIC,Special,40,100,30,10,Single exc. user,be,May paralyze the target.
+Thunderbolt,ELECTRIC,Special,95,100,15,10,Single exc. user,be,May paralyze the target.
+Tickle,NORMAL,Status,0,100,20,0,Single exc. user,bce,Lowers the target’s Attack and Defense by 1 stage.
+Torment,DARK,Status,0,100,15,0,Single exc. user,be,"During effect, the target can’t choose for use the last move it used. Effect ends when the target leaves the battle."
+Toxic,POISON,Status,0,85,10,0,Single exc. user,bce,Badly poisons the target.
+Toxic Spikes,POISON,Status,0,0,20,0,Opposing Pokémon's side,,"Can be used up to twice. If an opponent enters battle, in most cases, this effect ends if that Pokémon is a Poison type, that P..."
+Transform,NORMAL,Status,0,0,10,0,Single exc. user,,"User’s Defense, Sp. Atk, Sp. Def, Speed, and Attack stats; types; moves; species; individual values; and stat stages become tho..."
+Tri Attack,NORMAL,Special,80,100,10,20,Single exc. user,be,"May either burn, freeze, or paralyze the target."
+Trick,PSYCHIC,Status,0,100,10,0,Single exc. user,be,"Simultaneously, user receives target’s item, and target receives user’s item."
+Trick Room,PSYCHIC,Status,0,0,5,0,Both sides,e,"For five turns, as part of determining turn order, Pokémon in battle with lower Speeds strike before those with higher Speeds,..."
+Triple Kick,FIGHTING,Physical,10,90,10,0,Single exc. user,abef,Hits three times. Stops if a miss is caused. This attack’s power is multiplied by 2 for the second hit and by 3 for the third hit.
+Trump Card,NORMAL,Special,1,0,5,0,Single exc. user,abef,"If the move user chose for use has 0 PP, power is 200. If that move has 1 PP, power is 80. If that move has 2 PP, power is 60...."
+Twineedle,BUG,Physical,25,100,20,20,Single exc. user,be,Attacks twice in a row. May poison the target. (The additional effect is checked for each hit.)
+Twister,DRAGON,Special,40,100,20,20,All opposing Pokémon,bef,May make the target flinch. Power is doubled if the target is using Fly or Bounce.
+U-turn,BUG,Physical,70,100,20,0,Single exc. user,abef,"After this attack is used, if this attack was successful, if user has at least 1 HP and is still in battle, and if there’s at l..."
+Uproar,NORMAL,Special,50,100,10,0,Random opposing Pokémon,bef,"For three to six turns, user uses this attack during each of its attack segments and can’t take any other action. No Pokémon ca..."
+Vacuum Wave,FIGHTING,Special,40,100,30,0,Single exc. user,bef,Priority level 1.
+ViceGrip,NORMAL,Physical,55,100,30,0,Single exc. user,abef,
+Vine Whip,GRASS,Physical,35,100,15,0,Single exc. user,abef,
+Vital Throw,FIGHTING,Physical,70,0,10,0,Single exc. user,abef,Priority level -1.
+Volt Tackle,ELECTRIC,Physical,120,100,15,10,Single exc. user,abef,"If successful and target loses HP because of this attack, user loses 1/3 that much HP (recoil). May paralyze target."
+Wake-Up Slap,FIGHTING,Physical,60,100,10,0,Single exc. user,abef,"If the target is asleep, power is doubled and, if this attack is successful, the target wakes up."
+Water Gun,WATER,Special,40,100,25,0,Single exc. user,bef,
+Water Pulse,WATER,Special,60,100,20,20,Single exc. user,bef,May confuse the target.
+Water Sport,WATER,Status,0,0,15,0,Both sides,,"During effect, power of Fire-type attacks by any Pokémon in battle is halved."
+Water Spout,WATER,Special,150,100,5,0,All opposing Pokémon,be,"This attack’s power equals int(user’s current HP * 150 / user’s maximum HP) or 1, whichever is greater."
+Waterfall,WATER,Physical,80,100,15,20,Single exc. user,abef,May make the target flinch.
+Weather Ball,NORMAL,Special,50,100,10,0,Single exc. user,bef,"Power is doubled in weather. Type is Ice during Hail, Fire during Sunny Day, Rock during Sandstorm, and Water during Rain Dance."
+Whirlpool,WATER,Special,15,70,15,0,Single exc. user,bef,"Multi-turn attack. Target can’t switch out or run, and loses some HP each turn. Power is doubled if target is using Dive."
+Whirlwind,NORMAL,Status,0,100,20,0,Single exc. user,be,"Ends wild Pokémon battles. In Trainer battles, replaces target with a different Pokémon. Priority level -6."
+Will-O-Wisp,FIRE,Status,0,75,15,0,Single exc. user,bce,Burns the target.
+Wing Attack,FLYING,Physical,60,100,35,0,Single exc. user,abef,
+Wish,NORMAL,Status,0,0,10,0,User,,"After the next turn, if there’s a Pokémon at user’s position, that Pokémon gains half max. HP. Effect remains even if user leav..."
+Withdraw,WATER,Status,0,0,40,0,User,d,Raises user’s Defense by 1 stage.
+Wood Hammer,GRASS,Physical,120,100,15,0,Single exc. user,abef,"If successful and target loses HP because of this attack, user loses 1/3 that much HP (recoil)."
+Worry Seed,GRASS,Status,0,100,10,0,Single exc. user,bce,Changes target’s ability to Insomnia.
+Wrap,NORMAL,Physical,15,85,20,0,Single exc. user,abef,"Multi-turn attack. For three to six turns, the target can’t switch out or run, and after each turn except the last, target lose..."
+Wring Out,NORMAL,Special,1,100,5,0,Single exc. user,abef,"The more HP the target has relative to its maximum HP, the greater this attack’s power, up to 121."
+X-Scissor,BUG,Physical,80,100,15,0,Single exc. user,abef,
+Yawn,NORMAL,Status,0,0,10,0,Single exc. user,bce,"After the next turn, if target has no statuses and remains in battle since this effect began, target sleeps. ()"
+Zap Cannon,ELECTRIC,Special,120,50,5,100,Single exc. user,be,May paralyze the target.
+Zen Headbutt,PSYCHIC,Physical,80,90,15,20,Single exc. user,abef,May make the target flinch.
