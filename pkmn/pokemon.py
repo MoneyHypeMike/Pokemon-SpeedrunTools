@@ -29,7 +29,6 @@ class Pokemon():
        hp (int): Current hit point value
        exp (int): Current amount of experience
        happiness (int): Current amount of happiness
-       stat_mod (list of int): Current stat modifiers values
        
        Variables with a default value:
        ev_hp (int): HP effort value given when defeated
@@ -44,19 +43,21 @@ class Pokemon():
     def __init__(self, gen, species, gender, level, nature, ability, item,
                  move1, move2, move3, move4, iv_hp, iv_atk, iv_def, iv_spatk, 
                  iv_spdef, iv_spd, ev_hp=0, ev_atk=0, ev_def=0, ev_spatk=0, ev_spdef=0, 
-                 ev_spd=0, origin="Trainer"):
+                 ev_spd=0, origin="Trainer", pokerus=False):
         
         self.gen = gen
         self.species = speciedex.all.dex[gen][species]
-        self.gender = gender
+        self.gender = gender.upper()
         self.level = level
-        self.nature = [nature, 0, 0, 0, 0, 0]
-        self.ability = ability
-        self.item = item
-        self.moves = [movedex.all.dex[gen][x] for x in [move1, move2, move3, move4] if x != "None"]
+        self.nature = [nature.upper(), 0, 0, 0, 0, 0]
+        self.ability = ability.upper()
+        self.item = item.upper()
+        self.moves = [movedex.all.dex[gen][x] for x in [move1, move2, move3, move4] if x != ""]
         self.iv = [iv_hp, iv_atk, iv_def, iv_spatk, iv_spdef, iv_spd]
         self.stat = [0, 0, 0, 0, 0, 0]
         self.ev = [ev_hp, ev_atk, ev_def, ev_spatk, ev_spdef, ev_spd]
+        self.pokerus = pokerus
+        self.boost = [0, 0, 0, 0, 0, 0]
         
         self.update_nature()
         self.update_stats()
@@ -64,25 +65,47 @@ class Pokemon():
         self.hp = self.stat[0]
         self.exp = self.species.exp_group.table[self.level - 1]
         self.happiness = self.species.base_happiness
-        self.stat_mod = [0, 0, 0, 0, 0, 0]
         
         self.origin = origin
         self.status = "Normal"
         
-    def update_level(self):
+    def level_up(self):
         self.level += 1
         self.update_stats()
+        
+    def rare_candy(self):
+        self.level_up()
+        self.exp = self.species.exp_group.table[self.level - 1]
+    
+    def update_level(self):
+        current_level = self.level
+        current_exp = self.exp
+        exp = self.species.exp_group.table
+        
+        if current_level < 1:
+            raise ValueError("Current level is lower than 1")
+        elif current_exp >= exp[-1]:
+            return 100
+        elif current_exp < exp[current_level - 1]:
+            raise ValueError("Current experience point value is lower than the amount needed for the current level")
+        
+        for level in range(current_level - 1, len(exp) - 1):
+            if exp[level] <= current_exp < exp[level + 1]:
+                actual_level = level + 1
+        
+        for x in range(actual_level - current_level):
+            self.level_up()
     
     def update_nature(self):
         #This array is used to determinate the multiplier for each nature
         #The quotient indicates +nature, the remainder indicates -nature
         #Attack(0), Defense (1), Sp. Atk(3), Sp.Def (4), Speed (5)
         #If the remainder of the index is 0, the nature is neutral
-        natures = ["Hardy", "Lonely", "Adamant", "Naughty", "Brave",
-                   "Bold", "Docile", "Impish", "Lax", "Relaxed",
-                   "Modest", "Mild", "Bashful", "Rash", "Quiet",
-                   "Calm", "Gentle", "Careful", "Quirky", "Sassy",
-                   "Timid", "Hasty", "Jolly", "Naive", "Serious"]
+        natures = ["HARDY", "LONELY", "ADAMANT", "NAUGHTY", "BRAVE",
+                   "BOLD", "DOCILE", "IMPISH", "LAX", "RELAXED",
+                   "MODEST", "MILD", "BASHFUL", "RASH", "QUIET",
+                   "CALM", "GENTLE", "CAREFUL", "QUIRKY", "SASSY",
+                   "TIMID", "HASTY", "JOLLY", "NAIVE", "SERIOUS"]
         if self.nature[0] in natures:
             index = natures.index(self.nature[0])
             (plus, minus) = divmod(index, 5)
@@ -101,17 +124,23 @@ class Pokemon():
         self.item = ""
     
     def learn_move(self, move, slot):
-        num_moves = len([x for x in self.moves if x != ""])
-        if num_moves < 4:
-            self.moves[num_moves] = move
+        if slot > len(self.moves):
+            self.moves.append(move)
         else:
-            self.moves[slot] = move
+            self.moves[slot - 1] = move
     
     def update_exp(self, amount):
         self.exp += amount
     
     def update_evs(self, ev_yield):
-        self.ev = [(x + y) for (x,y) in zip(self.ev, ev_yield)]
+        multiplier = 2 if self.pokerus == True else 1
+        
+        if sum(self.ev + [multiplier * x for x in ev_yield]) < 511:
+            self.ev = [(x + multiplier * y) for (x,y) in zip(self.ev, ev_yield)]
+    
+    def update_iv(self, stat, n):
+        self.iv[stat] = n
+        self.update_stats()
     
     def update_stats(self):
         if self.species.gen < 3:

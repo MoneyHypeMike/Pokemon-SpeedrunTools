@@ -41,9 +41,9 @@ class Types():
         self.gen = gen
         self.name = name.upper()
         
-        self.table()
+        self.table_multi()
     
-    def table(self):
+    def table_multi(self):
         if self.gen < 2:
             types = ["BUG", "DRAGON", "ELECTRIC", "FIGHTING", "FIRE",
                      "FLYING", "GHOST", "GRASS", "GROUND", "ICE",
@@ -53,7 +53,6 @@ class Types():
                 row = types.index(self.name)
             except ValueError:
                 raise NotImplementedError
-            
             
             multipliers = [
             [1, 1, 1, 0.5, 0.5, 0.5, 1, 2, 1, 1, 1, 2, 2, 1, 1],
@@ -107,4 +106,20 @@ class Types():
             self.weak = {types[x] for x in range(17) if multipliers[row][x] == 0.5}
             self.strong = {types[x] for x in range(17) if multipliers[row][x] == 2}
             self.immune = {types[x] for x in range(17) if multipliers[row][x] == 0}
+    
+    def type_multi(self, pkmn_types): 
+        """Returns the effectiveness multiplier"""
+    
+        multipliers = [1, 1]
+    
+        for x in range(len(pkmn_types)):
+            if pkmn_types[x].name in self.weak:
+                multipliers[x] = 0.5
+            elif pkmn_types[x].name in self.strong:
+                multipliers[x] = 2
+            elif pkmn_types[x].name in self.immune:
+                multipliers[x] = 0
+    
+        return (multipliers[0], multipliers[1])
+
 all = Typedex()

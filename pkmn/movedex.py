@@ -24,11 +24,11 @@ class Movedex():
         self.create_dex(gen, filename)
     
     def find_category(self, gen, type):
-        categories = {"Physical": {"Normal", "Fighting", "Flying", "Ground", 
+        categories = {"PHYSICAL": {"Normal", "Fighting", "Flying", "Ground", 
                                  "Rock", "Bug", "Ghost", "Poison", "Steel"},
-                      "Special": {"Water", "Grass", "Fire", "Ice", "Electric",
+                      "SPECIAL": {"Water", "Grass", "Fire", "Ice", "Electric",
                                 "Psychic", "Dragon", "Dark"},
-                      "Other": "???"}
+                      "OTHER": "???"}
         if gen < 4:
             for category in categories.keys():
                 if type in categories[category]:
@@ -40,12 +40,12 @@ class Movedex():
             f.readline()
             for lines in f:
                 info = lines.split(",")
-                name = info[0].strip()
+                name = info[0].strip().upper()
                 type = info[1].strip()
                 if gen < 4:
                     category = self.find_category(gen, type)
                 else:
-                    category = info[2].strip()
+                    category = info[2].strip().upper()
                 if gen < 3:
                     power = int(info[2].strip())
                     accuracy = round(int(info[3].strip())*100/255)
@@ -242,75 +242,75 @@ class Moves():
     
     #dictionary which contains the different status aliments
     #second dictionary indicates the percentage to get the status (if needed)
-    status_moves = {"paralyzed": {"Body Slam": 0.3, "Bolt Strike": 0.2,
-                                  "Bounce": 0.3, "Discharge": 0.3,
-                                  "Dragon Breath": 0.3, "Force Palm": 0.3,
-                                  "Freeze Shock": 0.3, "Glare": 1,
-                                  "Lick": 0.3, "Nuzzle": 1, "Spark": 0.3,
-                                  "Stun Spore": 1, "Thunder": 0.3,
-                                  "Thunderbolt": 0.1, "Thunder Fang": 10,
-                                  "Thunder Punch": 0.1, "Thunder Shock": 0.1,
-                                  "Thunder Wave": 1, "Volt Tackle": 0.1,
-                                  "Zap Cannon": 1},
-                    "sleep": {"Dark Void": 1, "Grass Whistle": 1,
-                              "Hypnosis": 1, "Lovely Kiss": 1,
-                              "Relic Song": 0.1, "Sing": 1,
-                              "Sleep Powder": 1, "Spore": 1},
-                    "freeze": {"Blizzard": 0.1, "Freeze-Dry": 0.1,
-                               "Ice Beam": 0.1, "Ice Fang": 0.1,
-                               "Ice Punch": 0.1, "Powder Snow": 0.1},
-                    "burned": {"Blaze Kick": 0.1, "Blue Flare": 0.2,
-                               "Ember": 0.1, "Fire Blast": 0.1,
-                               "Fire Fang": 0.1, "Fire Punch": 0.1,
-                               "Flamethrower": 0.1, "Flame Wheel": 0.1,
-                               "Flare Blitz": 0.1, "Heat Wave": 0.1,
-                               "Ice Burn": 0.3, "Inferno": 1,
-                               "Lava Plume": 0.3, "Sacred Fire": 0.5,
-                               "Scald": 0.3, "Searing Shot": 0.3,
-                               "Steam Eruption": 0.3, "Will-O-Wisp": 1},
-                    "poison": {"Cross Poison": 0.1, "Gunk Shot": 0.3,
-                               "Poison Gas": 1, "Poison Jab": 0.3,
-                               "Poison Powder": 1, "Poison Sting": 0.3,
-                               "Poison Tail": 0.1, "Sludge": 30,
-                               "Sludge Bomb": 0.3, "Sludge Wave": 0.1,
-                               "Smog": 0.4, "Twineedle": 0.2},
-                    "badly_poison": {"Poison Fang": 0.5, "Toxic": 1},
-                    "confused": {"Chatter": 1, "Confuse Ray": 1, 
-                                 "Confusion": 0.1, "Dizzy Punch": 0.2,
-                                 "Dynamic Punch": 1, "Flatter": 1,
-                                 "Hurricane": 0.3, "Psybeam": 0.1,
-                                 "Rock Climb": 0.2, "Signal Beam": 0.1,
-                                 "Supersonic": 1, "Swagger": 1,
-                                 "Sweet Kiss": 1, "Teeter Dance": 1,
-                                 "Water Pulse": 0.2},
-                     "infatuated": {"Attract": 0.5},
-                     "trap": {"Bind", "Clamp", "Fire Spin", "Infestation",
-                              "Magma Storm", "Sand Tomb", "Whirlpool", "Wrap"},
-                     "nightmare": {"Nightmare"},
-                     "torment": {"Torment"},
-                     "disable": {"Disable"},
-                     "yawn": {"Yawn"},
-                     "heal block": {"Heal Block"},
-                     "no_immunity": {"Foresight", "Miracle Eye",
-                                     "Odor Sleuth"},
-                     "seeded": {"Leech Seed"},
-                     "embargo": {"Embargo"},
-                     "perish_song": {"Perish Song"},
-                     "ingrain": {"Ingrain"},
-                     "curse": {"Curse"},
-                     "encore": {"Encore"},
-                     "flinch": {"Air Slash": 0.3, "Astonish": 0.3, "Bite": 0.3,
-                                "Bone Club": 0.1, "Dark Pulse": 0.2, 
-                                "Dragon Rush": 0.2, "Extrasensory": 0.1,
-                                "Fake Out": 1, "Fire Fang": 0.1, 
-                                "Headbutt": 0.3, "Heart Stamp": 0.3,
-                                "Hyper Fang": 0.1, "Ice Fang": 0.1,
-                                "Icicle Crash": 0.3, "Iron Head": 0.3,
-                                "Needle Arm": 0.3, "Rock Slide": 0.3,
-                                "Rolling Kick": 0.3, "Sky Attack": 0.3,
-                                "Snore": 0.3, "Steamroller": 0.3, "Stomp": 0.3,
-                                "Thunder Fang": 0.1, "Twister": 0.2,
-                                "Waterfall": 0.2, "Zen Headbutt": 0.2}}
+    status_moves = {"PRZ": {"BODY SLAM": 0.3, "BOLT STRIKE": 0.2,
+                                  "BOUNCE": 0.3, "DISCHARGE": 0.3,
+                                  "DRAGON BREATH": 0.3, "FORCE PALM": 0.3,
+                                  "FREEZE SHOCK": 0.3, "GLARE": 1,
+                                  "LICK": 0.3, "NUZZLE": 1, "SPARK": 0.3,
+                                  "STUN SPORE": 1, "THUNDER": 0.3,
+                                  "THUNDERBOLT": 0.1, "THUNDER FANG": 10,
+                                  "THUNDER PUNCH": 0.1, "THUNDER SHOCK": 0.1,
+                                  "THUNDER WAVE": 1, "VOLT TACKLE": 0.1,
+                                  "ZAP CANNON": 1},
+                    "SLP": {"DARK VOID": 1, "GRASS WHISTLE": 1,
+                              "HYPNOSIS": 1, "LOVELY KISS": 1,
+                              "RELIC SONG": 0.1, "SING": 1,
+                              "SLEEP POWDER": 1, "SPORE": 1},
+                    "FRZ": {"BLIZZARD": 0.1, "FREEZE-DRY": 0.1,
+                               "ICE BEAM": 0.1, "ICE FANG": 0.1,
+                               "ICE PUNCH": 0.1, "POWDER SNOW": 0.1},
+                    "BRN": {"BLAZE KICK": 0.1, "BLUE FLARE": 0.2,
+                               "EMBER": 0.1, "FIRE BLAST": 0.1,
+                               "FIRE FANG": 0.1, "FIRE PUNCH": 0.1,
+                               "FLAMETHROWER": 0.1, "FLAME WHEEL": 0.1,
+                               "FLARE BLITZ": 0.1, "HEAT WAVE": 0.1,
+                               "ICE BURN": 0.3, "INFERNO": 1,
+                               "LAVA PLUME": 0.3, "SACRED FIRE": 0.5,
+                               "SCALD": 0.3, "SEARING SHOT": 0.3,
+                               "STEAM ERUPTION": 0.3, "WILL-O-WISP": 1},
+                    "PSN": {"CROSS POISON": 0.1, "GUNK SHOT": 0.3,
+                               "POISON GAS": 1, "POISON FANG": 0.5,
+                               "POISON JAB": 0.3, "POISON POWDER": 1, 
+                               "POISON STING": 0.3, "POISON TAIL": 0.1, 
+                               "SLUDGE": 30, "SLUDGE BOMB": 0.3, 
+                               "SLUDGE WAVE": 0.1, "SMOG": 0.4, 
+                               "TOXIC": 1, "TWINEEDLE": 0.2}}
+                     #"CONFUSED": {"CHATTER": 1, "CONFUSE RAY": 1, 
+                     #            "CONFUSION": 0.1, "DIZZY PUNCH": 0.2,
+                     #            "DYNAMIC PUNCH": 1, "FLATTER": 1,
+                     #            "HURRICANE": 0.3, "PSYBEAM": 0.1,
+                     #            "ROCK CLIMB": 0.2, "SIGNAL BEAM": 0.1,
+                     #            "SUPERSONIC": 1, "SWAGGER": 1,
+                     #            "SWEET KISS": 1, "TEETER DANCE": 1,
+                     #            "WATER PULSE": 0.2},
+                     #"INFATUATED": {"ATTRACT": 0.5},
+                     #"TRAP": {"BIND", "CLAMP", "FIRE SPIN", "INFESTATION",
+                     #         "MAGMA STORM", "SAND TOMB", "WHIRLPOOL", "WRAP"},
+                     #"NIGHTMARE": {"NIGHTMARE"},
+                     #"TORMENT": {"TORMENT"},
+                     #"DISABLE": {"DISABLE"},
+                     #"YAWN": {"YAWN"},
+                     #"HEAL BLOCK": {"HEAL BLOCK"},
+                     #"NO_IMMUNITY": {"FORESIGHT", "MIRACLE EYE",
+                     #                "ODOR SLEUTH"},
+                     #"SEEDED": {"LEECH SEED"},
+                     #"EMBARGO": {"EMBARGO"},
+                     #"PERISH_SONG": {"PERISH SONG"},
+                     #"INGRAIN": {"INGRAIN"},
+                     #"CURSE": {"CURSE"},
+                     #"ENCORE": {"ENCORE"},
+                     #"FLINCH": {"AIR SLASH": 0.3, "ASTONISH": 0.3, "BITE": 0.3,
+                     #           "BONE CLUB": 0.1, "DARK PULSE": 0.2, 
+                     #           "DRAGON RUSH": 0.2, "EXTRASENSORY": 0.1,
+                     #           "FAKE OUT": 1, "FIRE FANG": 0.1, 
+                     #           "HEADBUTT": 0.3, "HEART STAMP": 0.3,
+                     #           "HYPER FANG": 0.1, "ICE FANG": 0.1,
+                     #           "ICICLE CRASH": 0.3, "IRON HEAD": 0.3,
+                     #           "NEEDLE ARM": 0.3, "ROCK SLIDE": 0.3,
+                     #           "ROLLING KICK": 0.3, "SKY ATTACK": 0.3,
+                     #           "SNORE": 0.3, "STEAMROLLER": 0.3, "STOMP": 0.3,
+                     #           "THUNDER FANG": 0.1, "TWISTER": 0.2,
+                     #           "WATERFALL": 0.2, "ZEN HEADBUTT": 0.2}}
     
     ko_moves = {"Fissure", "Guillotine", "Horn Drill", "Sheer Cold"}
     
@@ -320,7 +320,7 @@ class Moves():
     
     def __init__(self, gen, name, category, type, power, pp, accuracy, effect_pct):
         self.gen = gen
-        self.name = name
+        self.name = name.upper()
         self.category = category
         self.type = typedex.all.dex[gen][type]
         self.power = power
@@ -337,6 +337,7 @@ class Moves():
         self.check_recharge()
         self.check_base()
         self.check_num_hit()
+        self.check_status()
         
     #def __str__(self):
     #    return "{} is a {} {} move with a power of {}, {} PP and {}% accuracy"\
@@ -345,6 +346,14 @@ class Moves():
     #def __repr__(self):
     #    return "moves.Moves({0.name}, {0.category}, {0.type}, {0.power}, {0.pp}, " \
     #            "{0.accuracy})".format(self)
+    
+    def check_status(self):
+        for keys in self.status_moves.keys():
+            if self.name in self.status_moves[keys]:
+                self.status = keys
+                break
+        else:
+            self.status = None
     
     def check_recoil(self):
         self.recoil = True if self.name in self.recoil_moves else False
