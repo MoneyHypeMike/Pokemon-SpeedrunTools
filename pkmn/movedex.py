@@ -32,7 +32,7 @@ class Movedex():
         if gen < 4:
             for category in categories.keys():
                 if type in categories[category]:
-                    return category
+                    return category.upper()
                     break
     
     def create_dex(self, gen, filename):
@@ -100,29 +100,29 @@ class Moves():
                       "Geomancy", "Ice Burn", "Phantom Force", "Razor Wind",
                       "Shadow Force", "Skull Bash", "Sky Attack", "Sky Drop",
                       "Solar Beam"}
-    base_moves = {"Punch": {"Bullet Punch", "Comet Punch", "Dizzy Punch",
-                            "Drain Punch", "Dynamic Punch", "Fire Punch",
-                            "Focus Punch", "Hammer Arm", "Ice Punch",
-                            "Mach Punch", "Mega Punch", "Meteor Mash",
-                            "Power-Up Punch", "Shadow Punch", 
-                            "Sky Uppercut", "Thunder Punch"},
-                  "Sound": {"Boomburst", "Bug Buzz", "Chatter", "Confide",
-                            "Uproar", "Disarming Voice", "Echoed Voice",
-                            "Grass Whistle", "Growl", "Heal Bell", 
-                            "Hyper Voice", "Metal Sound", "Noble Roar",
-                            "Parting Shot", "Perish Song", "Relic Song",
-                            "Roar", "Round", "Screech", "Sing", "Snarl",
-                            "Snore", "Supersonic"},
-                  "Jaw": {"Bite", "Crunch", "Fire Fang", "Ice Fang",
-                          "Poison Fang", "Thunder Fang"},
-                  "Pulse": {"Aura Sphere", "Dark Pulse", "Dragon Pulse",
-                            "Heal Pulse", "Water Pulse"},
-                  "Ball": {"Acid Spray", "Aura Sphere", "Barrage",
-                           "Bullet Seed", "Egg Bomb", "Electro Ball",
-                           "Energy Ball", "Focus Blast", "Gyro Ball",
-                           "Ice Ball", "Magnet Bomb", "Mud Bomb",
-                           "Octazooka", "Seed Bomb", "Shadow Ball",
-                           "Sludge Bomb", "Weather Ball"}}
+    base_moves = {"PUNCH": {"BULLET PUNCH", "COMET PUNCH", "DIZZY PUNCH",
+                            "DRAIN PUNCH", "DYNAMIC PUNCH", "FIRE PUNCH",
+                            "FOCUS PUNCH", "HAMMER ARM", "ICE PUNCH",
+                            "MACH PUNCH", "MEGA PUNCH", "METEOR MASH",
+                            "POWER-UP PUNCH", "SHADOW PUNCH", 
+                            "SKY UPPERCUT", "THUNDER PUNCH"},
+                  "SOUND": {"BOOMBURST", "BUG BUZZ", "CHATTER", "CONFIDE",
+                            "UPROAR", "DISARMING VOICE", "ECHOED VOICE",
+                            "GRASS WHISTLE", "GROWL", "HEAL BELL", 
+                            "HYPER VOICE", "METAL SOUND", "NOBLE ROAR",
+                            "PARTING SHOT", "PERISH SONG", "RELIC SONG",
+                            "ROAR", "ROUND", "SCREECH", "SING", "SNARL",
+                            "SNORE", "SUPERSONIC"},
+                  "JAW": {"BITE", "CRUNCH", "FIRE FANG", "ICE FANG",
+                          "POISON FANG", "THUNDER FANG"},
+                  "PULSE": {"AURA SPHERE", "DARK PULSE", "DRAGON PULSE",
+                            "HEAL PULSE", "WATER PULSE"},
+                  "BALL": {"ACID SPRAY", "AURA SPHERE", "BARRAGE",
+                           "BULLET SEED", "EGG BOMB", "ELECTRO BALL",
+                           "ENERGY BALL", "FOCUS BLAST", "GYRO BALL",
+                           "ICE BALL", "MAGNET BOMB", "MUD BOMB",
+                           "OCTAZOOKA", "SEED BOMB", "SHADOW BALL",
+                           "SLUDGE BOMB", "WEATHER BALL"}}
     
     #Dictionary of moves which heals when used
     #The second dictionary list the following:
@@ -186,7 +186,7 @@ class Moves():
                       +1: {"Ally Switch", "Aqua Jet", "Baby-Doll Eyes", "Bide",
                            "Bullet Punch", "Ice Shard", "Ion Deluge", 
                            "Mach Punch", "Powder", "Quick Attack", 
-                           "Shadow Punch", "Vacuum Wave", "Water Shuriken"},
+                           "Shadow Sneak", "Vacuum Wave", "Water Shuriken"},
                       +2: {"Extreme Speed", "Feint", "Follow Me", 
                            "Rage Powder"},
                       +3: {"Crafty Shield", "Fake Out", "Quick Guard", 
@@ -338,6 +338,7 @@ class Moves():
         self.check_base()
         self.check_num_hit()
         self.check_status()
+        self.check_punch()
         
     #def __str__(self):
     #    return "{} is a {} {} move with a power of {}, {} PP and {}% accuracy"\
@@ -360,6 +361,9 @@ class Moves():
         
     def check_high_crit(self):
         self.high_crit = True if self.name in self.high_crit_moves else False
+    
+    def check_punch(self):
+        self.punch = True if self.name in self.base_moves["PUNCH"] else False
     
     def check_priority(self):
         for number in self.priority_moves.keys():

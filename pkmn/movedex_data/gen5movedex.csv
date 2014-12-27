@@ -109,7 +109,7 @@ Double Hit,NORMAL,Physical,35,90,10,0,Single exc. user,abe,Attacks twice in a ro
 Double Kick,FIGHTING,Physical,30,100,30,0,Single exc. user,abe,Attacks twice in a row.
 Double Team,NORMAL,Status,0,101,15,0,User,d,Raises user’s evasiveness by 1 stage.
 Double-Edge,NORMAL,Physical,120,100,15,0,Single exc. user,abe,"If target loses HP because of this attack, user loses 33% that much HP."
-DoubleSlap,NORMAL,Physical,15,85,10,0,Single exc. user,abe,Multi-hit attack. Attacks two to five times in a row. 35% chance for two or three times; 15% chance for four or five times.
+Double Slap,NORMAL,Physical,15,85,10,0,Single exc. user,abe,Multi-hit attack. Attacks two to five times in a row. 35% chance for two or three times; 15% chance for four or five times.
 Draco Meteor,DRAGON,Special,140,90,5,100,Single exc. user,be,Lowers user’s Special Attack by 2 stages if this attack is successful.
 Dragon Claw,DRAGON,Physical,80,100,15,0,Single exc. user,abe,
 Dragon Dance,DRAGON,Status,0,101,20,0,User,d,Raises user’s Attack and Speed by 1 stage.
@@ -142,11 +142,11 @@ Explosion,NORMAL,Physical,250,100,5,0,All exc. user,be,"User faints as part of t
 Extrasensory,PSYCHIC,Special,80,100,30,10,Single exc. user,be,May make the target flinch.
 ExtremeSpeed,NORMAL,Physical,80,100,5,0,Single exc. user,abe,Priority level 2.
 Facade,NORMAL,Physical,70,100,20,0,Single exc. user,abe,"Power is doubled if user is poisoned, burned, or paralyzed."
-Faint Attack,DARK,Physical,60,101,20,0,Single exc. user,abe,
+Feint Attack,DARK,Physical,60,101,20,0,Single exc. user,abe,
 Fake Out,NORMAL,Physical,40,100,10,100,Single exc. user,abe,May make the target flinch. Priority level 3.
 Fake Tears,DARK,Status,0,100,20,0,Single exc. user,bce,Lowers the target’s Special Defense by 2 stages.
 False Swipe,NORMAL,Physical,40,100,40,0,Single exc. user,abe,"If this attack’s damage would reduce the target’s HP to less than 1, it reduces it to 1 instead."
-FeatherDance,FLYING,Status,0,100,15,0,Single exc. user,bce,Lowers the target’s Attack by 2 stages.
+Feather Dance,FLYING,Status,0,100,15,0,Single exc. user,bce,Lowers the target’s Attack by 2 stages.
 Feint,NORMAL,Physical,30,100,10,0,Single exc. user,,Ignores effect of Protect and Detect by target. Ignores effect of Wide Guard and Quick Guard on target’s side if target is an o...
 Fiery Dance,FIRE,Special,80,100,10,50,Single exc. user,be,May raise user’s Special Attack by 1 stage.
 Final Gambit,FIGHTING,Special,1,100,5,0,Single exc. user,ab,"Deals damage equal to user’s current HP. If this attack is successful, the user faints. Affected by type immunities."
@@ -400,7 +400,7 @@ Sacred Fire,FIRE,Physical,100,95,5,50,Single exc. user,bem,May burn the target.
 Sacred Sword,FIGHTING,Physical,90,100,20,0,Single exc. user,abe,This attack ignores the target’s stat stages (both in accuracy checks and damage calculation).
 Safeguard,NORMAL,Status,0,101,25,0,User's side,d,"For five turns, each Pokémon on the user’s side is protected from status problems caused by other Pokémon."
 Sand Tomb,GROUND,Physical,35,85,15,100,Single exc. user,be,"Multi-turn attack. Lasts five or six turns. The target can’t switch out or run, and after each turn except the last, target los..."
-Sand-Attack,GROUND,Status,0,100,15,0,Single exc. user,bce,Lowers the target’s accuracy by 1 stage.
+Sand Attack,GROUND,Status,0,100,15,0,Single exc. user,bce,Lowers the target’s accuracy by 1 stage.
 Sandstorm,ROCK,Status,0,101,10,0,Both sides,,"Weather. Lasts for five turns. { After each turn except the last, each Pokémon in battle that isn’t rotated out, except Ground,..."
 Scald,WATER,Special,80,100,15,30,Single exc. user,bem,May burn the target.
 Scary Face,NORMAL,Status,0,100,10,0,Single exc. user,bce,Lowers the target’s Speed by 2 stages.
@@ -508,7 +508,7 @@ Thunder,ELECTRIC,Special,120,70,10,30,Single exc. user,be,"May paralyze target. 
 Thunder Fang,ELECTRIC,Physical,65,95,15,10,Single exc. user,abe,May paralyze the target. May make the target flinch.
 Thunder Wave,ELECTRIC,Status,0,100,20,0,Single exc. user,bce,Paralyzes the target.
 ThunderPunch,ELECTRIC,Physical,75,100,15,10,Single exc. user,abej,May paralyze the target.
-ThunderShock,ELECTRIC,Special,40,100,30,10,Single exc. user,be,May paralyze the target.
+Thunder Shock,ELECTRIC,Special,40,100,30,10,Single exc. user,be,May paralyze the target.
 Thunderbolt,ELECTRIC,Special,95,100,15,10,Single exc. user,be,May paralyze the target.
 Tickle,NORMAL,Status,0,100,20,0,Single exc. user,bce,Lowers the target’s Attack and Defense (in that order) by 1 stage.
 Torment,DARK,Status,0,100,15,0,Single exc. user,bcep,"During effect, the target can’t choose for use the last move it used. Effect ends when the target leaves the battle."

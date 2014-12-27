@@ -5,9 +5,9 @@ class Speciedex():
     """Creates a pokedex for generation 1 to 5."""
     
     def __init__(self):
-        self.dex = {1: {}, 2: {}, 3: {}, 4:{}, 5:{}}
+        self.dex = {1: {}, 2: {}, 3: {}, 4:{}, 5:{}, 5.5:{}}
         
-        for x in range(1, 6):
+        for x in [1, 2, 3, 4, 5, 5.5]:
             self.files(x)
         
     def files(self, gen):
@@ -20,7 +20,9 @@ class Speciedex():
         elif gen == 4:
             filename = r".\speciedex_data\gen4speciedex.csv"
         elif gen == 5:
-            filename = r".\speciedex_data\gen5speciedex.csv"
+            filename = r".\speciedex_data\gen5bwspeciedex.csv"
+        elif gen == 5.5:
+            filename = r".\speciedex_data\gen5b2w2speciedex.csv"
         
         self.create_dex(gen, filename)
     
@@ -74,8 +76,8 @@ class Species:
                  base_exp, ev_yield):
         self.gen = gen
         self.dex_num = dex_num
-        self.name = name
-        self.types = [typedex.all.dex[gen][x] for x in types if x !=""]
+        self.name = name.upper()
+        self.types = [typedex.all.dex[int(gen)][x] for x in types if x !=""]
         self.abilities = [x for x in abilities if x != ""]
         self.weight = weight
         self.catch_rate = catch_rate

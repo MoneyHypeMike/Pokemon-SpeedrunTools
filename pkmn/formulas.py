@@ -71,10 +71,8 @@ def calc_iv(stat_name, base_stat, level, stat_value, ev=0, nature=1):
                     if stat_value <= ((2 * base_stat + iv + ev // 4)
                       * level // 100 + 5) * nature < stat_value + 1]
 
-# Missing gen 5
 # Formulas taken from http://www.upokecenter.com
-def calc_exp(gen, loser_level, exp_yield, trainer_battle = True, num_poke = 1,
-             orig_trainer = True, hold_item = None, winner_level=0):
+def calc_exp(gen, loser_level, exp_yield, trainer_battle = True, num_poke = 1, winner_level=0, hold_item = None, orig_trainer = True):
     """Calculates the experience points gained"""
     
     trainer_battle = 1.5 if trainer_battle == True else 1
@@ -87,6 +85,12 @@ def calc_exp(gen, loser_level, exp_yield, trainer_battle = True, num_poke = 1,
     elif 2 < gen < 5:
         return floor((max(1,(exp_yield * loser_level // 7) // num_poke))
                        * trainer_battle * orig_trainer * hold_item)
+    else:
+        A = loser_level * 2 + 10
+        B = exp_yield * loser_level // 5 * trainer_battle // num_poke
+        C = loser_level + winner_level + 10
+        exp = floor(floor(floor(floor(sqrt(A) * (A * A)) * B)) / floor(sqrt(C) * (C * C))) + 1
+        return floor(exp * hold_item)
 
 def calc_damage(atk_pkmn, def_pkmn, move, atk_mod=0, def_mod=0, crit=False, weather=[],
                 screen=set(), battle_type="SINGLE", location="BUILDING"):
@@ -718,7 +722,6 @@ def move_bp(atk_pkmn, def_pkmn, move, weather):
             var_x2 += 0 if (atk_pkmn.iv[5] % 2) == 0 else 8
             type_num = (var_x2 * 15 // 63)
             move.type = typedex.all.dex[atk_pkmn.species.gen][type[type_num].upper()]
-            print(bp, move.type.name)
         return [bp]
     elif move_name == "MAGNITUDE":
         return [10, 30, 50, 70, 90, 110, 130, 150]

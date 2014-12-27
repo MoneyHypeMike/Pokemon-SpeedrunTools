@@ -4,7 +4,7 @@ class Typedex():
     def __init__(self):
         self.dex = {1: {}, 2: {}, 3: {}, 4:{}, 5:{}}
         
-        for x in range(1, 6):
+        for x in [1, 2, 3, 4, 5]:
             self.files(x)
         
     def files(self, gen):

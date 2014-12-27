@@ -11,6 +11,7 @@ http://www.upokecenter.com/dex/?lang=en
 
 EV Yield:
 http://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_effort_value_yield
+http://www.upokecenter.com/dex/?lang=en&view=effortgiven
 
 Exp Group:
 http://veekun.com/dex/pokemon

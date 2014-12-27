@@ -1,6 +1,7 @@
 from math import ceil, floor, sqrt
 import movedex
 import speciedex
+import typedex
 
 class Pokemon():
     """Defines a pokemon
@@ -46,19 +47,19 @@ class Pokemon():
                  ev_spd=0, origin="Trainer", pokerus=False):
         
         self.gen = gen
-        self.species = speciedex.all.dex[gen][species]
+        self.species = speciedex.all.dex[gen][species.upper()]
         self.gender = gender.upper()
         self.level = level
         self.nature = [nature.upper(), 0, 0, 0, 0, 0]
         self.ability = ability.upper()
         self.item = item.upper()
-        self.moves = [movedex.all.dex[gen][x] for x in [move1, move2, move3, move4] if x != ""]
+        self.moves = [movedex.all.dex[int(gen)][x.upper()] for x in [move1, move2, move3, move4] if x != ""]
         self.iv = [iv_hp, iv_atk, iv_def, iv_spatk, iv_spdef, iv_spd]
         self.stat = [0, 0, 0, 0, 0, 0]
         self.ev = [ev_hp, ev_atk, ev_def, ev_spatk, ev_spdef, ev_spd]
         self.pokerus = pokerus
         self.boost = [0, 0, 0, 0, 0, 0]
-        
+
         self.update_nature()
         self.update_stats()
         
@@ -69,9 +70,47 @@ class Pokemon():
         self.origin = origin
         self.status = "Normal"
         
+        if "HIDDEN POWER" in [x.name for x in self.moves]:
+            self.hidden_power([x.name for x in self.moves].index("HIDDEN POWER"))
+        
+    def hidden_power(self, index):
+        types = ("FIGHTING", "FLYING", "POISON", "GROUND", "ROCK", "BUG",
+                "GHOST", "STEEL", "FIRE", "WATER", "GRASS", "ELECTRIC",
+                "PSYCHIC", "ICE", "DRAGON", "DARK")
+        
+        if self.species.gen == 2:
+            var_a = 8 if self.iv[1] >= 8 else 0
+            var_a += 4 if self.iv[2] >= 8 else 0
+            var_a += 1 if self.iv[3] >= 8 else 0
+            var_a += 2 if self.iv[5] >= 8 else 0
+            
+            bp = ((var_a * 5 + (self.iv[3] % 4)) / 2) + 31
+            type_num = 4 * (self.stat[1] % 4) + (self.stat[2] % 4)
+            type = types[type_num]
+        else:
+            var_x1 = 0 if (self.iv[0] // 2 % 2) == 0 else 1
+            var_x1 += 0 if (self.iv[1] // 2 % 2) == 0 else 2
+            var_x1 += 0 if (self.iv[2] // 2 % 2) == 0 else 4
+            var_x1 += 0 if (self.iv[3] // 2 % 2) == 0 else 16
+            var_x1 += 0 if (self.iv[4] // 2 % 2) == 0 else 32
+            var_x1 += 0 if (self.iv[5] // 2 % 2) == 0 else 8
+            bp = (var_x1 * 40 // 63) + 30
+            
+            var_x2 = 0 if (self.iv[0] % 2) == 0 else 1
+            var_x2 += 0 if (self.iv[1] % 2) == 0 else 2
+            var_x2 += 0 if (self.iv[2] % 2) == 0 else 4
+            var_x2 += 0 if (self.iv[3] % 2) == 0 else 16
+            var_x2 += 0 if (self.iv[4] % 2) == 0 else 32
+            var_x2 += 0 if (self.iv[5] % 2) == 0 else 8
+            type_num = (var_x2 * 15 // 63)
+            type = types[type_num]
+            
+        self.moves[index] = movedex.Moves(self.gen, "HIDDEN POWER", "SPECIAL", type, bp, 15, 100, 0)
+    
     def level_up(self):
         self.level += 1
         self.update_stats()
+        self.hp = self.stat[0]
         
     def rare_candy(self):
         self.level_up()
@@ -137,6 +176,9 @@ class Pokemon():
         
         if sum(self.ev + [multiplier * x for x in ev_yield]) < 511:
             self.ev = [(x + multiplier * y) for (x,y) in zip(self.ev, ev_yield)]
+            
+        if self.gen > 4:
+            self.update_stats()
     
     def update_iv(self, stat, n):
         self.iv[stat] = n
